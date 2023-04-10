@@ -29,7 +29,20 @@ export default function Home() {
 
         </div>
         <div className='flex flex-col justify-between items-center'>
-          <h1 className="text-4xl text-center m-16">Find the best people for your job</h1>
+          <div className='max-w-xs my-14 md:max-w-xl md:my-16 md:text-6xl'>
+            <h1 className="text-5xl text-center">Find the best people for your job</h1>
+            <div className='relative'>
+              <input type="text" className="mt-8 lg:mt-12 w-full border-2 box-border rounded-full tracking-wider text-sm px-4 py-4"
+                placeholder="Try 'Data Entry' or 'build a website' " />
+              <span className='absolute top-7 right-2'>
+                <button className='rounded-full bg-green-700 text-sm px-2 py-3 text-white'>
+                  Get Started
+                </button>
+              </span>
+            </div>
+
+
+          </div>
         </div>
       </div>
 
