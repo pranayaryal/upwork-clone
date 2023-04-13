@@ -1,1 +1,1 @@
-Trying to clone upwork with nextjs
+Trying to clone upwork with nextjs and tailwindcss
