@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24"
+  role="img">
+  <path vector-effect="non-scaling-stroke" stroke="var(--icon-color, #001e00)"
+    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+    d="M17.31 10.732s-2.324 3.29-1.855 6.833L3 20.98 6.465 8.556c3.524.468 6.832-1.855 6.832-1.855l4.012 4.031z"></path>
+  <path vector-effect="non-scaling-stroke" stroke="var(--icon-color, #001e00)"
+    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+    d="M20.31 8.846L15.154 3.69a.976.976 0 00-1.38 0l-1.07 1.07a.976.976 0 000 1.38l5.156 5.156a.976.976 0 001.38 0l1.07-1.07a.976.976 0 000-1.38zM3.03 20.982l5.719-5.72m1.015.42a1.445 1.445 0 100-2.889 1.445 1.445 0 000 2.89z"></path>
+</svg>
