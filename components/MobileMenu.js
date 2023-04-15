@@ -28,15 +28,27 @@ const MobileMenu = () => {
 
       </button>
       {isOpen &&
-        <div className="absolute flex flex-col justify-start align-left">
-          <button>Find Talent</button>
-          <div>
-
+        <div className="absolute left-0 top-12 flex flex-col z-50 bg-white w-full min-h-full ml-4 mt-8">
+          <p className="py-2 bg-green-50">Find Talent</p>
+          <div className="flex flex-col ml-4">
+            <div className="flex flex-col">
+              <p className="mt-4">Post a job and hire a pro</p>
+              <p className="text-gray-400">Talent Marketplace</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="mt-4">Browse and buy projects</p>
+              <p className="text-gray-400">Project Catalog</p>
+            </div>
+            <div className="flex flex-col">
+              <p className="mt-4">Let us find you the right talent</p>
+              <p className="text-gray-400">Talent Scout</p>
+            </div>
           </div>
-          <button>Find Work</button>
-          <button>Why Upwork</button>
-          <button>Enterprise</button>
-          <button>Log In</button>
+          
+          <p className="mt-8">Find Work</p>
+          <p className="mt-8">Why Upwork</p>
+          <p className="mt-8">Enterprise</p>
+          <p className="mt-8">Log In</p>
 
         </div>
       }
