@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react';
+import ArrowDown from './ArrowDown';
 
 
 const MobileMenu = () => {
@@ -28,25 +29,48 @@ const MobileMenu = () => {
 
       </button>
       {isOpen &&
-        <div className="absolute left-0 top-12 flex flex-col z-50 bg-white w-full min-h-full ml-4 mt-8">
-          <p className="py-2 bg-green-50">Find Talent</p>
-          <div className="flex flex-col ml-4">
-            <div className="flex flex-col">
+        <div className="absolute text-sm left-0 top-12 flex flex-col justify-start z-50 bg-white w-full min-h-full mt-8 px-4">
+          <div className="flex align-center space-x-60">
+            <span className="py-2 bg-green-50">Find Talent</span>
+            <ArrowDown />
+          </div>
+          <div className={`flex flex-col ml-4`}>
+            <div className="flex flex-col p-2">
               <p className="mt-4">Post a job and hire a pro</p>
               <p className="text-gray-400">Talent Marketplace</p>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col p-2">
               <p className="mt-4">Browse and buy projects</p>
               <p className="text-gray-400">Project Catalog</p>
             </div>
-            <div className="flex flex-col">
+            <div className="flex flex-col p-2">
               <p className="mt-4">Let us find you the right talent</p>
               <p className="text-gray-400">Talent Scout</p>
             </div>
           </div>
           
           <p className="mt-8">Find Work</p>
+          <div className="flex flex-col ml-4">
+            <div className="flex flex-col p-2">
+              <p className="mt-4">Ways to earn</p>
+              <span className="text-gray-400 mt-1">Learn why Upwork has the right opportunities for you</span>
+            </div>
+            <div className="flex flex-col p-2">
+              <p className="mt-4">Find work for your skills</p>
+              <p className="text-gray-400 mt-1">Explore the kind of work availale in your field</p>
+            </div>
+            <div className="flex flex-col p-2">
+              <p className="mt-4">Find ways to promote yourself</p>
+              <p className="text-gray-400 mt-1">Show clients you are the one they want</p>
+            </div>
+          </div>
           <p className="mt-8">Why Upwork</p>
+          <div className="flex flex-col ml-4">
+              <span className="text-gray-500 py-4">Success Stories</span>
+              <span className="text-gray-500 py-4 bg-green-100">How to hire</span>
+              <span className="text-gray-500 py-4">Reviews</span>
+              <span className="text-gray-500 py-4">How to find work</span>
+          </div>
           <p className="mt-8">Enterprise</p>
           <p className="mt-8">Log In</p>
 
