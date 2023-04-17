@@ -1,10 +1,15 @@
 'use client'
 import { useState } from 'react';
-import ArrowDown from './ArrowDown';
+import NavText from './NavText';
+import FindWork from './FindWork';
+import WhyUpwork from './WhyUpwork';
 
 
 const MobileMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isTalentOpen, setIsTalentOpen] = useState(false);
+  const [isWorkOpen, setIsWorkOpen] = useState(false);
+  const [isWhyOpen, setIsWhyOpen] = useState(false);
   return (
 
 
@@ -30,47 +35,28 @@ const MobileMenu = () => {
       </button>
       {isOpen &&
         <div className="absolute text-sm left-0 top-12 flex flex-col justify-start z-50 bg-white w-full min-h-full mt-8 px-4">
-          <div className="flex align-center space-x-60">
+          <div onClick={() => setIsTalentOpen(!isTalentOpen)} className="flex align-center space-x-60">
             <span className="py-2 bg-green-50">Find Talent</span>
-            <ArrowDown />
+            <svg xmlns="http://www.w3.org/2000/svg" 
+            fill="none" aria-hidden="true"
+             className={`w-4 h-4 mt-3 ${isTalentOpen && 'rotate-180'} ease-in-out duration-300`}
+            viewBox="0 0 24 24" role="img">
+            <path vectorEffect="non-scaling-stroke" stroke="var(--icon-color, #001e00)"
+              strokeLinecap="round" strokeLinejoin="round"
+              strokeMiterlimit="10" strokeWidth="1.5" d="M18 10l-6 5-6-5"></path></svg>
           </div>
-          <div className={`flex flex-col ml-4`}>
-            <div className="flex flex-col p-2">
-              <p className="mt-4">Post a job and hire a pro</p>
-              <p className="text-gray-400">Talent Marketplace</p>
-            </div>
-            <div className="flex flex-col p-2">
-              <p className="mt-4">Browse and buy projects</p>
-              <p className="text-gray-400">Project Catalog</p>
-            </div>
-            <div className="flex flex-col p-2">
-              <p className="mt-4">Let us find you the right talent</p>
-              <p className="text-gray-400">Talent Scout</p>
-            </div>
-          </div>
+          {isTalentOpen &&
+            <NavText />
+          }
           
-          <p className="mt-8">Find Work</p>
-          <div className="flex flex-col ml-4">
-            <div className="flex flex-col p-2">
-              <p className="mt-4">Ways to earn</p>
-              <span className="text-gray-400 mt-1">Learn why Upwork has the right opportunities for you</span>
-            </div>
-            <div className="flex flex-col p-2">
-              <p className="mt-4">Find work for your skills</p>
-              <p className="text-gray-400 mt-1">Explore the kind of work availale in your field</p>
-            </div>
-            <div className="flex flex-col p-2">
-              <p className="mt-4">Find ways to promote yourself</p>
-              <p className="text-gray-400 mt-1">Show clients you are the one they want</p>
-            </div>
-          </div>
-          <p className="mt-8">Why Upwork</p>
-          <div className="flex flex-col ml-4">
-              <span className="text-gray-500 py-4">Success Stories</span>
-              <span className="text-gray-500 py-4 bg-green-100">How to hire</span>
-              <span className="text-gray-500 py-4">Reviews</span>
-              <span className="text-gray-500 py-4">How to find work</span>
-          </div>
+          <p onClick={() => setIsWhyOpen(!isWhyOpen)} className="mt-8">Find Work</p>
+          {isWhyOpen &&
+            <FindWork />
+          }
+          <p onClick={() => setIsWorkOpen(!isWorkOpen)} className="mt-8">Why Upwork</p>
+          {isWorkOpen &&
+           <WhyUpwork />
+          }
           <p className="mt-8">Enterprise</p>
           <p className="mt-8">Log In</p>
 
