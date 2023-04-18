@@ -3,6 +3,7 @@ import { useState } from 'react';
 import NavText from './NavText';
 import FindWork from './FindWork';
 import WhyUpwork from './WhyUpwork';
+import { FramerExample } from './FramerExample';
 
 
 const MobileMenu = () => {

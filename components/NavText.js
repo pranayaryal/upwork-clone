@@ -1,7 +1,7 @@
-
 const NavText = ({props}) => {
   return (
     <div className={`flex flex-col ml-4`}>
+
       <div className="flex flex-col p-2">
         <p className="mt-4">Post a job and hire a pro</p>
         <p className="text-gray-400">Talent Marketplace</p>

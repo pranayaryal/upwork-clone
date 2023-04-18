@@ -1,4 +1,4 @@
-import Image from 'next/image'
+
 import MobileMenu from '@/components/MobileMenu'
 import { Inter } from 'next/font/google'
 
