@@ -1,5 +1,5 @@
 
-import MobileMenu from '@/components/MobileMenu'
+import { MobileMenu } from '@/components/MobileMenu'
 import { Inter } from 'next/font/google'
 
 
@@ -9,38 +9,20 @@ import Skills from '@/components/skills'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+
   return (
     <div className='p-2'>
       <div className='flex flex-col'>
         <div>
           <nav className="flex flex-row justify-between items-center w-full lg:hidden">
             <div className='flex flex-row justify-start items-center'>
-              {/* <svg
-                viewBox='0 0 100 80' 
-                width={70} height={40} className='text-gray-200'>
-                <rect width={60} height={5} y={10} rx={8} />
-                <rect y={25} width={60} height={5} />
-                <rect y={40} width={60} height={5} />
-              </svg> */}
-              {/* <svg
-                className='w-6 h-6'
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-              </svg> */}
               <MobileMenu />
               <a href="/" className='mb-1 text-xl text-green-700'>Upwork</a>
-
             </div>
             <a href="/">Sign Up</a>
           </nav>
-
           {/* nav for large */}
-          <nav>
-
-          </nav>
-
+          <nav></nav>
         </div>
         <hr />
         <div className='flex flex-col justify-between items-center'>
