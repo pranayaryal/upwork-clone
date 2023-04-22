@@ -1,6 +1,8 @@
-
+'use client';
 import { MobileMenu } from '@/components/MobileMenu'
 import { Inter } from 'next/font/google'
+import { useState } from 'react'
+
 
 
 import Skills from '@/components/skills'
@@ -10,21 +12,42 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
 
+  const [isOpenMenu, setIsOpenMenu] = useState(false);
+
+  const doOpen = () => {
+    setIsOpenMenu(!isOpenMenu);
+  }
+
   return (
-    <div className='p-2'>
+    <div className='px-2 py-1'>
       <div className='flex flex-col'>
-        <div>
-          <nav className="flex flex-row justify-between items-center w-full lg:hidden">
-            <div className='flex flex-row justify-start items-center'>
-              <MobileMenu />
-              <a href="/" className='mb-1 text-xl text-green-700'>Upwork</a>
-            </div>
-            <a href="/">Sign Up</a>
-          </nav>
-          {/* nav for large */}
-          <nav></nav>
-        </div>
+        <nav className="flex py-2 justify-between items-center w-full lg:hidden">
+          <div className='flex justify-start items-center space-x-2'>
+            <button
+              onClick={() => doOpen()}
+              className='lg:hidden flex items-center px-3 py-2 text-black-500 hover:text-black-400 rounded'>
+              <svg
+                className={`fill-current h-3 w-3 ${isOpenMenu ? "hidden" : "block"}`}
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+              <svg
+                className={`fill-current h-3 w-3 ${isOpenMenu ? "block" : "hidden"}`}
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+              </svg>
+
+            </button>
+            <a href="/" className='mb-1 text-xl text-green-700'>Upwork</a>
+          </div>
+          <a href="/">Sign Up</a>
+        </nav>
         <hr />
+        <MobileMenu isOpen={isOpenMenu} />
         <div className='flex flex-col justify-between items-center'>
           <div className='max-w-xs mt-14 mb-10 md:max-w-xl md:mt-16 lg:mb-8 md:text-6xl'>
             <h2 className="text-4xl tracking-tight text-center">

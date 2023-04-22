@@ -2,9 +2,9 @@
 
 export const TalentMarketPlace = () => {
   return (
-    <div className="w-full min-h-[100vh] bg-white absolute z-50">
-      <div className="flex left-0 mt-4 px-4 justify-start w-full">
-        <div className="flex px-1 py-2 flex-row justify-between items-center">
+    <div className="min-h-[100vh] bg-white absolute z-50">
+      <div className="flex mt-4 px-4 justify-between items-center">
+        <div className="flex py-2 flex-row justify-between items-center">
           <div className="flex flex-row justify-between space-x-2 items-center">
             <svg xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -25,19 +25,14 @@ export const TalentMarketPlace = () => {
               <span className="text-sm ml-8">Talent Marketplace</span>
             </div>
           </div>
-          <div>
-            <svg
-              className={`fill-current h-3 w-3 mr-0`}
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
-            </svg>
-          </div>
-
-
-
         </div>
+        <svg
+          className={`fill-current h-3 w-3`}
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M10 8.586L2.929 1.515 1.515 2.929 8.586 10l-7.071 7.071 1.414 1.414L10 11.414l7.071 7.071 1.414-1.414L11.414 10l7.071-7.071-1.414-1.414L10 8.586z" />
+        </svg>
       </div>
     </div>
 
