@@ -1,6 +1,8 @@
 import { Arrow } from './Arrow'
 import { ArrowDown } from './ArrowDown'
+import ArrorRight from './ArrowRight'
 import { useState } from 'react'
+import FindTalentMain from './FindTalentMain'
 
 export const FrontPage = () => {
     const [isTalentOpen, setIsTalentOpen] = useState(false);
@@ -21,16 +23,25 @@ export const FrontPage = () => {
                     </svg>
                     <div className="flex space-x-1" 
                         onMouseEnter={() => setIsTalentOpen(true)}
-                        onMouseLeave={() => setIsTalentOpen(false)}
                         >
-                        <p className="text-sm">Find Talent</p>
+                        <p className="text-sm hover:text-green-300">Find Talent</p>
                         <ArrowDown rotate={isTalentOpen}/>
                     </div>
                     { isTalentOpen && 
-                        <div className="absolute left-0 h-24 top-12 w-full">
-                            <div className="w-full px-8 py-4 flex items-center justify-start space-x-10">
-                                <div className='w-1/4 border-r-2 border-red-500'>
-                                    <p>You clicked talent</p>
+                        <div className="absolute h-[50vh] z-50 left-0 top-12 w-full">
+                            <div className="w-full px-4 py-4 flex items-center justify-start space-x-10">
+                                <div className='w-1/4 border-r-2 border-red-500 p-3'>
+                                    <FindTalentMain 
+                                        first="Post a job and hire a pro"
+                                        second="Talent Marketplace"/>
+                                    <FindTalentMain 
+                                        className="mt-4"
+                                        first="Browse and buy projects"
+                                        second="Project Catalog"/>
+                                    <FindTalentMain 
+                                        className="mt-4"
+                                        first="Let us find you the right client"
+                                        second="Talend Scout"/>
                                 </div>
                                 <div className='w-3/4'>
                                     <p>You clicked talent</p>
