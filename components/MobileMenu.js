@@ -2,8 +2,8 @@
 'use client'
 import { useState } from 'react';
 import NavText from './NavText';
-import FindWork from './FindWork';
-import WhyUpwork from './WhyUpwork';
+import { FindWork } from './FindWork';
+import { WhyUpwork } from './WhyUpwork';
 import { TalentMarketPlace } from './TalentMarketplace';
 import { motion } from "framer-motion";
 import { FramerExample } from './FramerExample';
