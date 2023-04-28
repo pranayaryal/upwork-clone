@@ -1,8 +1,29 @@
 'use client';
 import { MobileMenu } from '@/components/MobileMenu'
+import { TalentMarketPlace } from '@/components/TalentMarketplace';
+import { WhyUpwork } from '@/components/WhyUpwork';
+import { Arrow } from '@/components/Arrow';
+import { FindWork } from '@/components/FindWork';
 import { Inter } from 'next/font/google'
 import { useState } from 'react'
+import { motion } from "framer-motion";
 
+const variants = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 }
+    }
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 }
+    }
+  }
+}
 
 
 import Skills from '@/components/skills'
@@ -11,6 +32,43 @@ import Skills from '@/components/skills'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const [isTalentOpen, setIsTalentOpen] = useState(false);
+  const [isWorkOpen, setIsWorkOpen] = useState(false);
+  const [isWhyOpen, setIsWhyOpen] = useState(false);
+  const [openMarketPlace, setOpenMarketPlace] = useState(false);
+
+  const clickTalent = () => {
+    setIsTalentOpen(!isTalentOpen);
+    setIsWorkOpen(false);
+    setIsWhyOpen(false);
+  }
+  
+  const clickWork = () => {
+    setIsWorkOpen(!isWorkOpen);
+    setIsTalentOpen(false);
+    setIsWhyOpen(false);
+  }
+
+  const clickWhy = () => {
+    setIsWhyOpen(!isWhyOpen);
+    setIsTalentOpen(false);
+    setIsWorkOpen(false);
+  }
+
+  const doMarketPlace = () => {
+    setOpenMarketPlace(true);
+    setIsWhyOpen(false);
+    setIsTalentOpen(false)
+    setIsWorkOpen(false);
+  }
+
+  const closeAll = () => {
+    setIsOpenMenu(false);
+    setOpenMarketPlace(false);
+    setIsWhyOpen(false);
+    setIsTalentOpen(false)
+    setIsWorkOpen(false);
+  }
 
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
@@ -20,7 +78,7 @@ export default function Home() {
 
   return (
     <div className='px-2 py-1'>
-      <div className='flex flex-col'>
+      <div className='flex flex-col max-w-full'>
         <nav className="flex py-2 justify-between items-center w-full lg:hidden">
           <div className='flex justify-start items-center space-x-2'>
             <button
@@ -47,7 +105,74 @@ export default function Home() {
           <a href="/">Sign Up</a>
         </nav>
         <hr />
-        <MobileMenu isOpen={isOpenMenu} />
+
+        {/* Start of Mobile Menu */}
+
+        {isOpenMenu &&
+          <div className='lg:hidden bg-gray-500'>
+            <div className="h-screen absolute text-sm left-0
+        flex flex-col justify-start
+        z-50 bg-white w-full py-4
+        px-6 transition-all ease-in-duration-500
+        cursor-pointer">
+              <div onClick={() => clickTalent()}
+                className="flex flex-row mt-2 justify-between align-center w-full">
+                <span className="bg-green-50">Find Talent</span>
+                <Arrow isClicked={isTalentOpen} />
+              </div>
+              {isTalentOpen &&
+                /* <NavText /> */
+                (<ul className={`flex flex-col ml-4`}>
+
+                  <motion.li
+                    variants={variants}
+                    whileHover={{ scale: 1.1 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="flex flex-col p-2"
+                    onClick={() => doMarketPlace()}
+                  >
+                    <p className="mt-4">Post a job and hire a pro</p>
+                    <p className="text-gray-400">Talent Marketplace</p>
+                  </motion.li>
+                  <li className="flex flex-col p-2">
+                    <p className="mt-4">Browse and buy projects</p>
+                    <p className="text-gray-400">Project Catalog</p>
+                  </li>
+                  <li className="flex flex-col p-2">
+                    <p className="mt-4">Let us find you the right talent</p>
+                    <p className="text-gray-400">Talent Scout</p>
+                  </li>
+                </ul>)
+              }
+
+
+              <div className='mt-8 flex flex-row justify-between align-center'>
+                <p onClick={() => clickWork()} >Find Work</p>
+                <Arrow isClicked={isWorkOpen} />
+              </div>
+              {isWorkOpen &&
+                <FindWork />
+              }
+
+              <div className='mt-8 flex flex-row justify-between align-center'>
+              <p onClick={() => clickWhy()}>Why Upwork</p>
+              <Arrow isClicked={isWhyOpen} />
+              </div>
+              {isWhyOpen &&
+                <WhyUpwork />
+              }
+              <p className="mt-8">Enterprise</p>
+              <p className="mt-8">Log In</p>
+
+            </div>
+            {openMarketPlace && <TalentMarketPlace
+             closeAll={() => closeAll()}
+             closeTalent={() => setOpenMarketPlace(false)} />}
+          </div>
+        }
+
+        {/* End of Mobile Menu */}
+
         <div className='flex flex-col justify-between items-center'>
           <div className='max-w-xs mt-14 mb-10 md:max-w-xl md:mt-16 lg:mb-8 md:text-6xl'>
             <h2 className="text-4xl tracking-tight text-center">

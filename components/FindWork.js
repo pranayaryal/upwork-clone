@@ -1,5 +1,5 @@
 
-const FindWork = () => {
+export const FindWork = () => {
   return (
     <div className="flex flex-col ml-4">
       <div className="flex flex-col p-2">
@@ -17,5 +17,3 @@ const FindWork = () => {
     </div>
   );
 }
-
-export default FindWork;

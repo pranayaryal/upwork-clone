@@ -25,8 +25,7 @@ const variants = {
   }
 }
 
-export const MobileMenu = ({isOpen}) => {
-  console.log(isOpen)
+export const MobileMenu = (props) => {
   const [isTalentOpen, setIsTalentOpen] = useState(false);
   const [isWorkOpen, setIsWorkOpen] = useState(false);
   const [isWhyOpen, setIsWhyOpen] = useState(false);
@@ -60,10 +59,14 @@ export const MobileMenu = ({isOpen}) => {
   return (
 
     <div className='lg:hidden bg-gray-500'>
-      {isOpen &&
-        <div className="h-screen absolute text-sm left-0 top-6 flex flex-col justify-start z-50 bg-white w-full min-h-full mt-4 px-4">
+      {props.isOpen &&
+        <div className="h-screen absolute text-sm left-0
+        flex flex-col justify-start
+        z-50 bg-white w-full py-4
+        px-6 transition-all ease-in-duration-500
+        cursor-pointer">
           <div onClick={() => clickTalent()}
-            className="flex flex-row mt-2 justify-between w-full">
+            className="flex flex-row mt-2 justify-between align-center w-full">
             <span className="bg-green-50">Find Talent</span>
             <svg xmlns="http://www.w3.org/2000/svg"
               fill="none" aria-hidden="true"
@@ -113,7 +116,7 @@ export const MobileMenu = ({isOpen}) => {
 
         </div>
       }
-      {openMarketPlace && <TalentMarketPlace />}
+      {openMarketPlace && <TalentMarketPlace closeMenu={() => props.closeMenu} />}
     </div>
 
 

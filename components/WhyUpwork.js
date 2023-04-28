@@ -1,5 +1,5 @@
 
-const WhyUpwork = () => {
+export const WhyUpwork = () => {
   return (
 
     <div className="flex flex-col ml-4">
@@ -26,5 +26,3 @@ const WhyUpwork = () => {
 
   )
 }
-
-export default WhyUpwork;
