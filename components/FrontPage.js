@@ -11,7 +11,7 @@ export const FrontPage = () => {
     const [isWhyOpen, setIsWhyOpen] = useState(false);
 
     return (
-        <div className="hidden md:block flex flex-col justify-center items-center px-14 py-4">
+        <div className="hidden lg:block flex flex-col justify-center items-center px-14 py-4">
             <nav className="flex w-full justify-between items-center">
                 <div className="flex justify-center items-center space-x-4">
                     <svg xmlns="http://www.w3.org/2000/svg"
