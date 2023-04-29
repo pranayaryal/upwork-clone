@@ -81,7 +81,7 @@ export default function Home() {
 
   return (
     <div className='px-2 py-1'>
-      <div className='flex flex-col max-w-full'>
+      <div className='flex flex-col'>
         <nav className="flex py-2 justify-between items-center w-full lg:hidden">
           <div className='flex justify-start items-center space-x-2'>
             <button
@@ -107,7 +107,7 @@ export default function Home() {
           </div>
           <a href="/">Sign Up</a>
         </nav>
-        <hr />
+        <hr className="lg:hidden" />
 
         {/* Start of Mobile Menu */}
 

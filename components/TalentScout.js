@@ -14,11 +14,11 @@ const fields = [
 const TalentScout = () => {
   return (
     <div className="flex justify-start align-top space-x-8">
-      <div className="flex flex-col space-y-3 justify-center w-[1/3]">
+      <div className="w-[1/3] mt-2">
         <p>Talent MarketPlace</p>
-        <p className="text-sm text-gray-400">
+        <p className="text-sm text-gray-400 mt-2">
           Learn about working with talent or explore your specific hiring needs.</p>
-        <div className="flex align-center justify-start space-x-1">
+        <div className="flex align-center justify-start space-x-1 mt-2">
           <a className="text-blue-500 text-sm underline" href="#">
             Hire on Talent MarketPlace
           </a>
@@ -29,23 +29,11 @@ const TalentScout = () => {
           </svg>
         </div>
         {/* Adding to move to top */}
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
       </div>
-      <div className="flex flex-col space-y-3 justify-center w-[1/3]">
+      <div className="flex flex-col space-y-3 justify-center w-[1/3] mt-14">
         {fields.map(field => {
           return (
-            <p class='text-sm mt-4'>{field}</p>
+            <p class='text-sm mt-4 text-gray-500'>{field}</p>
           )})}
       </div>
     </div>
