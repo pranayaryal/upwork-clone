@@ -1,6 +1,7 @@
 import { Arrow } from './Arrow'
 import { ArrowDown } from './ArrowDown'
 import ArrorRight from './ArrowRight'
+import TalentScout from './TalentScout'
 import { useState } from 'react'
 import FindTalentMain from './FindTalentMain'
 
@@ -28,7 +29,7 @@ export const FrontPage = () => {
                         <ArrowDown rotate={isTalentOpen}/>
                     </div>
                     { isTalentOpen && 
-                        <div className="absolute h-[50vh] z-50 left-0 top-12 w-full">
+                        <div className="absolute h-[50vh] z-50 left-0 top-12 w-full shadow">
                             <div className="w-full px-4 py-4 flex items-center justify-start space-x-10">
                                 <div className='w-1/4 border-r-2 border-red-500 p-3'>
                                     <FindTalentMain 
@@ -43,8 +44,8 @@ export const FrontPage = () => {
                                         first="Let us find you the right client"
                                         second="Talend Scout"/>
                                 </div>
-                                <div className='w-3/4'>
-                                    <p>You clicked talent</p>
+                                <div className='w-3/4 mt-0'>
+                                    <TalentScout />
                                 </div>
                             </div>
                         </div>
