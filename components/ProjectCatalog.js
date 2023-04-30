@@ -1,8 +1,8 @@
-
+import ImageCard from "./ImageCard";
 
 const ProjectCatalog = () => {
     return (
-        <div className='flex justify-start align-top'>
+        <div className='flex justify-start align-top space-x-8'>
             <div className='w-[1/3] mt-2'>
                 <p>Project Catalog</p>
                 <p class='text-sm text-gray-400'>Browse and buy projects that have a clear scope and price.</p>
@@ -17,7 +17,13 @@ const ProjectCatalog = () => {
                     </svg>
                 </div>
             </div>
-            <div className="w=[2/3] grid grid-cols-3 gap-x-2 gap-y-2">
+            <div className="mt-8 w=[2/3] grid grid-cols-3 gap-x-8 gap-y-8">
+              <ImageCard src="./logodesign.jpg" desc="Logo Design" />
+              <ImageCard src="./seo.jpg" desc="SEO" />
+              <ImageCard src="./wordpress.jpg" desc="Word Press" />
+              <ImageCard src="./socialmedia.jpg" desc="Social Media Marketing" />
+              <ImageCard src="./videoediting.jpg" desc="Video Editing" />
+              <ImageCard src="./blog.jpg" desc="Articles and Blog post" />
 
             </div>
             <div>

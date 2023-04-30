@@ -3,19 +3,24 @@ import ArrowRight from './ArrowRight';
 const fields = [
   'Development & IT',
   'Design & Creative',
-  'Marketing',
+  'Sales & Marketing',
+  'Writing & Translation',
+  'Admin & Support',
+  'Finance & Accounting',
+  'Engineering & Architecture',
+  'Legal'
 ]
 
-const TalentScout = () => {
+const TalentMarketPlaceLarge = () => {
   return (
     <div className="flex justify-start align-top space-x-8">
       <div className="w-[1/3] mt-2">
-        <p>Talent Scout</p>
+        <p>Talent MarketPlace</p>
         <p className="text-sm text-gray-400 mt-2">
-          Learn how recruiters find you expert developers, designers and marketers.</p>
+          Learn about working with talent or explore your specific hiring needs.</p>
         <div className="flex align-center justify-start space-x-1 mt-2">
           <a className="text-blue-500 text-sm underline" href="#">
-           Talk to Talent Scout 
+            Hire on Talent MarketPlace
           </a>
 
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
@@ -35,4 +40,4 @@ const TalentScout = () => {
   )
 }
 
-export default TalentScout;
+export default TalentMarketPlaceLarge;
