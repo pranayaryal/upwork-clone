@@ -27,6 +27,9 @@ export const FrontPage = () => {
   const [isTalentOpen, setIsTalentOpen] = useState(false);
   const [isWorkOpen, setIsWorkOpen] = useState(false);
   const [isWhyOpen, setIsWhyOpen] = useState(false);
+  const [isTalentMarketPlaceHovered, setIsTalentMarketPlaceHovered] = useState(false);
+  const [isProjectCatalogHovered, setIsProjectCatalogHovered] = useState(false);
+  const [isTalentScoutHovered, setIsTalentScoutHovered] = useState(false);
 
   return (
     <div>
@@ -77,20 +80,26 @@ export const FrontPage = () => {
             <div className='w-1/4 border-r-2 border-gray-500 p-3'>
               <FindTalentMain
                 first="Post a job and hire a pro"
+                onMouseEnter={() => setIsTalentMarketPlaceHovered(true)}
+                onMouseLeave={() => setIsTalentMarketPlaceHovered(false)}
                 second="Talent Marketplace" />
               <FindTalentMain
                 className="mt-4"
+                onMouseEnter={() => setIsProjectCatalogHovered(true)}
+                onMouseLeave={() => setIsProjectCatalogHovered(false)}
                 first="Browse and buy projects"
                 second="Project Catalog" />
               <FindTalentMain
+                onMouseEnter={() => setIsTalentScoutHovered(true)}
+                onMouseLeave={() => setIsTalentScoutHovered(false)}
                 className="mt-4"
                 first="Let us find you the right client"
-                second="Talend Scout" />
+                second="Talent Scout" />
             </div>
             <div className='w-3/4'>
-              {/* <TalentMarketPlaceLarge /> */}
-              <ProjectCatalog />
-              {/* <TalentScout /> */}
+              {isTalentMarketPlaceHovered && <TalentMarketPlaceLarge />}
+              {isProjectCatalogHovered && <ProjectCatalog />}
+              {isTalentScoutHovered && <TalentScout />}
             </div>
           </div>
         </div>
