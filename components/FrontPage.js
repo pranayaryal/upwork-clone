@@ -176,21 +176,29 @@ export const FrontPage = () => {
           </div>
 
         </div>}
-      <div className="flex flex-col md:flex-row md:space-x-4 px-4 md:px-8 lg:px-52 mt-8 md:mt-10">
-        <div className="flex flex-col items-left justify-center w-full">
-          <h1 className="md:text-7xl text-6xl font-serif text-indigo-500 tracking-tight">
-            {'Pick the'}
-            <br />
-            {'best '}
-            <br className='hidden md:block lg:hidden' />
-            {'talent'}
-          </h1>
-          <p className="text-2xl mt-3 text-gray-500">You can find them right here</p>
-          <button className='w-36 mt-8 bg-indigo-400 py-2 rounded-full text-white'>Get Started</button>
+      <div className="px-4 md:px-8 lg:px-52">
+        <div className="flex flex-col md:flex-row md:space-x-4 mt-8 md:mt-10">
+          <div className="flex flex-col items-left justify-center w-full">
+            <h1 className="md:text-7xl text-6xl font-serif text-indigo-500 tracking-tight">
+              {'Pick the'}
+              <br />
+              {'best '}
+              <br className='hidden md:block lg:hidden' />
+              {'talent'}
+            </h1>
+            <p className="text-2xl mt-3 text-gray-500">You can find them right here</p>
+            <button className='w-36 mt-8 bg-indigo-400 py-2 rounded-full text-white'>Get Started</button>
+
+          </div>
+          <img className='hidden md:block md:w-96 lg:w-auto md:h-[1/2]' src="./teamwork.svg" />
+
 
         </div>
-        <img className='hidden md:block md:w-96 lg:w-auto md:h-[1/2]' src="./teamwork.svg" />
-
+        <div className="flex flex-col mt-4">
+          <p className='text-gray-500'>Trusted by</p>
+          <div className='flex'>
+          </div>
+        </div>
 
       </div>
     </div>
