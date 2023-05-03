@@ -194,11 +194,43 @@ export const FrontPage = () => {
 
 
         </div>
-        <div className="flex flex-col mt-4">
+        <div className="flex flex-col mt-8">
           <p className='text-gray-500'>Trusted by</p>
           <div className='flex'>
+           <img src="./coffee.svg" className="w-36 h-36"/> 
           </div>
         </div>
+        <h1 className='text-4xl tracking-tight font-serif mt-4'>Up your work game, it's free.</h1>
+        <div className='flex flex-col mt-8 space-y-4'>
+          <div className='flex space-x-2'>
+            <p>Logo</p>
+            <div clasName="flex flex-col space-y-4">
+              <p className='text-2xl'>No cost to join.</p>
+              <p className='text-gray-600 text-sm mt-1'>Register and browse professionals, explore projects, or even book a consultation</p>
+            </div>
+
+          </div>
+          <div className='flex space-x-2'>
+            <p>Logo</p>
+            <div clasName="flex flex-col space-y-4">
+              <p className='text-2xl'>Post a job and hire top talent.</p>
+              <p className='text-gray-600 text-sm mt-1'>Finding talent doesn't have to be a chore.
+              Post a job or we can search for you!</p>
+            </div>
+
+          </div>
+          <div className='flex space-x-2'>
+            <p>Logo</p>
+            <div clasName="flex flex-col space-y-4">
+              <p className='text-2xl'>Work with the best without breaking the bank.</p>
+              <p className='text-gray-600 text-sm mt-1'>Upwork makes it affordable to
+              up your work and take advantage of low transaction rates.</p>
+            </div>
+
+          </div>
+
+        </div>
+        <button class="w-full md:w-64 mt-8 text-indigo-700 border-indigo-700 border-2 rounded-full py-3">Learn How to Hire</button>
 
       </div>
     </div>
