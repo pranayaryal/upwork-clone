@@ -6,6 +6,7 @@ import TalentScout from './TalentScout'
 import ProjectCatalog from './ProjectCatalog'
 import { useState } from 'react'
 import FindTalentMain from './FindTalentMain'
+import Star from './Star'
 
 export const FrontPage = () => {
   const hoverTalent = () => {
@@ -200,7 +201,7 @@ export const FrontPage = () => {
            <img src="./coffee.svg" className="w-36 h-36"/> 
           </div>
         </div>
-        <h1 className='text-4xl tracking-tight font-serif mt-4'>Up your work game, it's free.</h1>
+        <h1 className='text-4xl md:text-5xl tracking-tight font-serif mt-4'>Up your work game, it's free.</h1>
         <div className='flex flex-col mt-8 space-y-4'>
           <div className='flex space-x-2'>
             <p>Logo</p>
@@ -231,6 +232,114 @@ export const FrontPage = () => {
 
         </div>
         <button class="w-full md:w-64 mt-8 text-indigo-700 border-indigo-700 border-2 rounded-full py-3">Learn How to Hire</button>
+
+        <h1 className="mt-8 text-4xl md:text-5xl font-serif md:mt-12">Browse talent by category</h1>
+        <div className="flex flex-col my-10 space-y-4 md:space-y-0 md:grid md:gap-y-6 md:grid-cols-2 md:gap-x-12 lg:grid-cols-4">
+          <div className="flex bg-pink-50 flex-col p-5 hover:bg-gray-200 rounded-xl transition duration-150
+            hover:ease-in-out">
+            <p className="text-xl">Development & IT</p>
+            <div className="flex space-x-14 mt-2">
+
+              <div className="flex space-x-2">
+                <Star />
+                <p className="text-gray-500">4.85/5</p>
+              </div>
+              <p className="text-gray-500">1805 skills</p>
+
+            </div>
+          </div>
+          <div className="flex bg-pink-50 flex-col p-5 hover:bg-gray-200 rounded-xl transition duration-150
+            hover:ease-in-out">
+            <p className="text-xl">Sales & Marketing</p>
+            <div className="flex space-x-14 mt-2">
+
+              <div className="flex space-x-2">
+                <Star />
+                <p className="text-gray-500">4.92/5</p>
+              </div>
+              <p className="text-gray-500">1805 skills</p>
+
+            </div>
+          </div>
+          <div className="flex bg-pink-50 flex-col p-5 hover:bg-gray-200 rounded-xl transition duration-150
+            hover:ease-in-out">
+            <p className="text-xl">Design & Creative</p>
+            <div className="flex space-x-14 mt-2">
+              <div className="flex space-x-2">
+                <Star />
+                <p className="text-gray-500">4.77/5</p>
+              </div>
+              <p className="text-gray-500">1805 skills</p>
+
+            </div>
+          </div>
+          <div className="flex bg-pink-50 flex-col p-5 hover:bg-gray-200 rounded-xl transition duration-150
+            hover:ease-in-out">
+            <p className="text-xl">Finance & Accounting</p>
+            <div className="flex space-x-14 mt-2">
+              <div className="flex space-x-2">
+                <Star />
+                <p className="text-gray-500">4.77/5</p>
+              </div>
+              <p className="text-gray-500">1805 skills</p>
+
+            </div>
+          </div>
+          <div className="flex bg-pink-50 flex-col p-5 hover:bg-gray-200 rounded-xl transition duration-150
+            hover:ease-in-out">
+            <p className="text-xl">Writing & Translation</p>
+            <div className="flex space-x-14 mt-2">
+
+              <div className="flex space-x-2">
+                <Star />
+                <p className="text-gray-500">4.92/5</p>
+              </div>
+              <p className="text-gray-500">1805 skills</p>
+
+            </div>
+          </div>
+          <div className="flex bg-pink-50 flex-col p-5 hover:bg-gray-200 rounded-xl transition duration-150
+            hover:ease-in-out">
+            <p className="text-xl">Admin & Customer Support</p>
+            <div className="flex space-x-14 mt-2">
+
+              <div className="flex space-x-2">
+                <Star />
+                <p className="text-gray-500">4.77/5</p>
+              </div>
+              <p className="text-gray-500">508 skills</p>
+
+            </div>
+          </div>
+          <div className="flex bg-pink-50 flex-col p-5 hover:bg-gray-200 rounded-xl transition duration-150
+            hover:ease-in-out">
+            <p className="text-xl">Engineering & Architecture</p>
+            <div className="flex space-x-14 mt-2">
+
+              <div className="flex space-x-2">
+                <Star />
+                <p className="text-gray-500">4.77/5</p>
+              </div>
+              <p className="text-gray-500">508 skills</p>
+
+            </div>
+          </div>
+          <div className="flex flex-col p-5 bg-pink-50 hover:bg-gray-200 rounded-xl transition duration-150
+            hover:ease-in-out">
+            <p className="text-xl">Legal</p>
+            <div className="flex space-x-14 mt-2">
+
+              <div className="flex space-x-2">
+                <Star />
+                <p className="text-gray-500">4.77/5</p>
+              </div>
+              <p className="text-gray-500">508 skills</p>
+
+            </div>
+          </div>
+
+
+        </div>
 
       </div>
     </div>
