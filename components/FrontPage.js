@@ -205,7 +205,7 @@ export const FrontPage = () => {
         <div className='flex flex-col mt-8 space-y-4'>
           <div className='flex space-x-2'>
             <p>Logo</p>
-            <div clasName="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-4">
               <p className='text-2xl'>No cost to join.</p>
               <p className='text-gray-600 text-sm mt-1'>Register and browse professionals, explore projects, or even book a consultation</p>
             </div>
@@ -340,12 +340,13 @@ export const FrontPage = () => {
 
 
         </div>
-        <div className="flex w-full">
-          <div className="flex flex-col w-[2/3]">
-            <h1 className="text-4xl md:text-5xl font-serif">This is how good companies find good company</h1>
+        <div className="flex flex-col md:flex-row w-full">
+          <div className="flex flex-col w-2/3 space-y-4 bg-green-300 p-8 rounded-xl">
+            <p className='text-xl'>Enterprise Suite</p>
+            <h1 className="leading-4 text-4xl md:text-5xl font-serif">This is how <br/> good companies<br/> find good company</h1>
           </div>
-          <div className='w-[1/3]'>
-            <img src="./face.jpg" className="w-60 h-62 aspect-auto" alt="Face"/>
+          <div className='hidden md:block w-1/3'>
+            <img src="./face.jpg" className="w-full h-62 object-cover object-center" alt="Face"/>
           </div>
         </div>
 
