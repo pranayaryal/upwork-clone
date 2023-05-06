@@ -341,11 +341,11 @@ export const FrontPage = () => {
 
         </div>
         <div className="flex w-full">
-          <div className="flex flex-col w-[2/3] space-x-0">
-            <h1 className="text-4xl md:text-5xl font-serif">How it works</h1>
+          <div className="flex flex-col w-[2/3]">
+            <h1 className="text-4xl md:text-5xl font-serif">This is how good companies find good company</h1>
           </div>
-          <div>
-            <p>Image goes here</p>
+          <div className='w-[1/3]'>
+            <img src="./face.jpg" className="w-60 h-62 aspect-auto" alt="Face"/>
           </div>
         </div>
 
