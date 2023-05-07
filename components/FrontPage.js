@@ -126,22 +126,22 @@ export const FrontPage = () => {
         </div>
       }
       {isWhyOpen &&
-        <div class="h-[40vh] z-50 w-full shadow">
+        <div className="h-[40vh] z-50 w-full shadow">
           <div className="w-full px-11 py-4 flex items-top justify-start space-x-20">
             <div className='h-[25vh] grid grid-cols-2 gap-x-12 gap-y-0 w-[1/5] p-4 hover:bg-pink-50'>
-              <div class='p-2'>
+              <div className='p-2'>
                 <p className='text-sm'>Success Stories</p>
                 <p className='text-xs mt-2 text-gray-400 text-wrap'>Discover how teams work <br />strategically and grow together.</p>
               </div>
-              <div class='p-2'>
+              <div className='p-2'>
                 <p className='text-sm'>Reviews</p>
                 <p className='text-xs mt-2 text-gray-400'>See what's it like to collaborate on <br />Upwork.</p>
               </div>
-              <div class='p-2'>
+              <div className='p-2'>
                 <p className='text-sm'>How to hire</p>
                 <p className='text-xs mt-2 text-gray-400'>Learn about the different ways to get <br />work done.</p>
               </div>
-              <div class='p-2'>
+              <div className='p-2'>
                 <p className='text-sm'>How to find work</p>
                 <p className='text-xs mt-2 text-gray-400'>Learn about how to grow your <br />independent career.</p>
               </div>
@@ -231,7 +231,7 @@ export const FrontPage = () => {
           </div>
 
         </div>
-        <button class="w-full md:w-64 mt-8 text-indigo-700 border-indigo-700 border-2 rounded-full py-3">Learn How to Hire</button>
+        <button className="w-full md:w-64 mt-8 text-indigo-700 border-indigo-700 border-2 rounded-full py-3">Learn How to Hire</button>
 
         <h1 className="mt-8 text-4xl md:text-5xl font-serif md:mt-12">Browse talent by category</h1>
         <div className="flex flex-col my-10 space-y-4 md:space-y-0 md:grid md:gap-y-6 md:grid-cols-2 md:gap-x-12 lg:grid-cols-4">
@@ -340,16 +340,34 @@ export const FrontPage = () => {
 
 
         </div>
-        <div className="flex flex-col md:flex-row w-full">
-          <div className="flex flex-col w-2/3 space-y-4 bg-green-300 p-8 rounded-xl">
-            <p className='text-xl'>Enterprise Suite</p>
-            <h1 className="leading-4 text-4xl md:text-5xl font-serif">This is how <br/> good companies<br/> find good company</h1>
-          </div>
-          <div className='hidden md:block w-1/3'>
-            <img src="./face.jpg" className="w-full h-62 object-cover object-center" alt="Face"/>
-          </div>
-        </div>
 
+      </div>
+      <div className="w-full md:px-8 lg:px-52 h-98">
+        <div className="flex flex-col md:flex-row w-full">
+            <div className="w-full flex flex-col md:w-2/3 space-y-4 bg-green-800 p-4 md:p-8 lg:p-12">
+              <p className='text-xl text-white'>Enterprise Suite</p>
+              <h1 className="md:leading-none text-4xl text-white md:text-5xl font-serif">
+              This is how<br/>good companies<br/>
+              find good company.</h1>
+              <p className="text-white text-lg">
+              Access the top 1% of talent on Upwork, and
+              a full suite of hybrid workforce management
+              tools. This is how innovation works now.
+              </p>
+              <div className='flex space-x-2'>
+                <p className='text-white'>Icon</p>
+                <p className='text-white'>Access expert talent to fill your skill gaps</p>
+              </div>
+              <div className='flex space-x-2'>
+                <p className='text-white'>Icon</p>
+                <p className='text-white'>Control your workflow: hire, classify and pay your talent</p>
+              </div>
+              <button className="bg-white w-2/5 text-green-800 px-1 py-2 rounded-full">Learn More</button>
+            </div>
+            <div className='hidden md:block w-1/3'>
+              <img src="./face.jpg" className="md:w-full md:h-full lg:w-5/6 lg:h-7/8 object-cover object-center" alt="Face"/>
+            </div>
+        </div>
       </div>
     </div>
   )
