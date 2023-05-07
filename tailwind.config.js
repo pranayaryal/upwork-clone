@@ -14,6 +14,12 @@ module.exports = {
       },
       zIndex: {
         '99': '99'
+      },
+      lineHeight: {
+        '11': '3rem',
+      },
+      height: {
+        '100': '28rem',
       }
     },
   },

@@ -195,11 +195,9 @@ export const FrontPage = () => {
 
 
         </div>
-        <div className="flex flex-col mt-8">
-          <p className='text-gray-500'>Trusted by</p>
-          <div className='flex'>
-           <img src="./coffee.svg" className="w-36 h-36"/> 
-          </div>
+        <p className='text-gray-500 mt-4'>Trusted by</p>
+        <div className='flex'>
+         <img src="./coffee.svg" className="w-36 h-36"/> 
         </div>
         <h1 className='text-4xl md:text-5xl tracking-tight font-serif mt-4'>Up your work game, it's free.</h1>
         <div className='flex flex-col mt-8 space-y-4'>
@@ -213,7 +211,7 @@ export const FrontPage = () => {
           </div>
           <div className='flex space-x-2'>
             <p>Logo</p>
-            <div clasName="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-4">
               <p className='text-2xl'>Post a job and hire top talent.</p>
               <p className='text-gray-600 text-sm mt-1'>Finding talent doesn't have to be a chore.
               Post a job or we can search for you!</p>
@@ -344,30 +342,47 @@ export const FrontPage = () => {
       </div>
       <div className="w-full md:px-8 lg:px-52 h-98">
         <div className="flex flex-col md:flex-row w-full">
-            <div className="w-full flex flex-col md:w-2/3 space-y-4 bg-green-800 p-4 md:p-8 lg:p-12">
+            <div className="w-full md:w-2/3 bg-green-800 px-4 py-4 md:py-2 md:p-8 lg:px-12 lg:py-8">
               <p className='text-xl text-white'>Enterprise Suite</p>
-              <h1 className="md:leading-none text-4xl text-white md:text-5xl font-serif">
+              <h1 className="md:leading-none text-4xl text-white md:text-6xl md:leading-11 font-serif mt-4 md:mt-8">
               This is how<br/>good companies<br/>
               find good company.</h1>
-              <p className="text-white text-lg">
+              <p className="text-white text-lg leading-6 mt-2 md:mt-8">
               Access the top 1% of talent on Upwork, and
               a full suite of hybrid workforce management
               tools. This is how innovation works now.
               </p>
-              <div className='flex space-x-2'>
+              <div className='flex space-x-2 mt-4 md:mt-8'>
                 <p className='text-white'>Icon</p>
                 <p className='text-white'>Access expert talent to fill your skill gaps</p>
               </div>
-              <div className='flex space-x-2'>
+              <div className='flex space-x-2 mt-2'>
                 <p className='text-white'>Icon</p>
                 <p className='text-white'>Control your workflow: hire, classify and pay your talent</p>
               </div>
-              <button className="bg-white w-2/5 text-green-800 px-1 py-2 rounded-full">Learn More</button>
+              <div className='flex space-x-3 mt-2'>
+                
+                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                         viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+                    className="w-4 h-4 text-violet-500 mt-1">
+                <path fill="white" d="M57,39.998V40h-1V29.998c0.553,0,1-0.447,1-1v-4c0-13.807-11.193-25-25-25s-25,11.193-25,25v4
+                        c0,0.553,0.447,1,1,1v10H7c-3.866,0-7,3.134-7,7V57c0,3.865,3.134,7,7,7v-0.002h5c2.211,0,4-1.789,4-4v-16
+                        c0-1.479-0.809-2.754-2-3.445V29.998c0.553,0,1-0.447,1-1v-4c0-9.389,7.611-17,17-17s17,7.611,17,17v4c0,0.553,0.447,1,1,1v10.555
+                        c-1.191,0.693-2,1.968-2,3.447v16c0,2.211,1.789,4,4,4h5c3.866,0,7-3.135,7-7V46.998C64,43.132,60.866,39.998,57,39.998z M6,61.898
+                        C3.718,61.435,2,59.418,2,57V46.998c0-2.419,1.719-4.436,4-4.899V61.898z M14,59.998c0,1.104-0.896,2-2,2H8v-20h4
+                        c1.104,0,2,0.896,2,2V59.998z M10,39.998v-10h2v10H10z M32,5.998c-10.493,0-19,8.506-19,19v3H9v-3c0-12.703,10.298-23,23-23
+                        s23,10.297,23,23v3h-4v-3C51,14.504,42.493,5.998,32,5.998z M54,29.998V40h-2V29.998H54z M56,62h-4c-1.104,0-2-0.896-2-2V44
+                        c0-1.105,0.896-2,2-2h4V62z M62,57c0,2.418-1.719,4.435-4,4.898v-19.8c2.282,0.464,4,2.481,4,4.899V57z"/>
+                </svg>
+                <p className='text-white'>Partner with Upwork for end-to-end support</p>
+              </div>
+              <button className="mt-8 md:mt-28 bg-white w-2/5 md:w-2/5 lg:w-1/5 text-green-800 px-1 py-2 rounded-full">Learn More</button>
             </div>
-            <div className='hidden md:block w-1/3'>
-              <img src="./face.jpg" className="md:w-full md:h-full lg:w-5/6 lg:h-7/8 object-cover object-center" alt="Face"/>
+            <div className='hidden md:block w-1/3 h-auto'>
+              <img src="./face.jpg" className="md:w-full md:h-full lg:w-auto lg:h-full object-cover object-left" alt="Face"/>
             </div>
         </div>
+        <p>Yo uare here</p>
       </div>
     </div>
   )
