@@ -340,19 +340,19 @@ export const FrontPage = () => {
         </div>
 
       </div>
-      <div className="w-full md:px-8 lg:px-52 h-98">
-        <div className="flex flex-col md:flex-row w-full">
-            <div className="w-full md:w-2/3 bg-green-800 px-4 py-4 md:py-2 md:p-8 lg:px-12 lg:py-8">
+      <div className="w-full md:px-8 lg:px-52">
+        <div className="flex flex-col-reverse md:flex-row w-full">
+            <div className="w-full md:w-3/5 bg-green-800 px-4 py-4 md:py-6 md:p-8 lg:px-12 lg:py-8">
               <p className='text-xl text-white'>Enterprise Suite</p>
-              <h1 className="md:leading-none text-4xl text-white md:text-6xl md:leading-11 font-serif mt-4 md:mt-8">
+              <h1 className="text-4xl text-white md:text-5xl leading-10 lg:leading-11 font-serif mt-4 lg:mt-8">
               This is how<br/>good companies<br/>
               find good company.</h1>
-              <p className="text-white text-lg leading-6 mt-2 md:mt-8">
+              <p className="text-white text-lg leading-6 mt-2 md:mt-5 lg:mt-8">
               Access the top 1% of talent on Upwork, and
               a full suite of hybrid workforce management
               tools. This is how innovation works now.
               </p>
-              <div className='flex space-x-2 mt-4 md:mt-8'>
+              <div className='flex space-x-2 mt-4 md:mt-4 lg:mt-8'>
                 <p className='text-white'>Icon</p>
                 <p className='text-white'>Access expert talent to fill your skill gaps</p>
               </div>
@@ -376,10 +376,10 @@ export const FrontPage = () => {
                 </svg>
                 <p className='text-white'>Partner with Upwork for end-to-end support</p>
               </div>
-              <button className="mt-8 md:mt-28 bg-white w-2/5 md:w-2/5 lg:w-1/5 text-green-800 px-1 py-2 rounded-full">Learn More</button>
+              <button className="mt-4 md:mt-8 lg:mt-16 bg-white w-2/5 md:w-2/5 lg:w-1/5 text-green-800 px-1 py-2 rounded-full">Learn More</button>
             </div>
-            <div className='hidden md:block w-1/3 h-auto'>
-              <img src="./face.jpg" className="md:w-full md:h-full lg:w-auto lg:h-full object-cover object-left" alt="Face"/>
+            <div className='md:block w-full h-full md:w-2/5 md:h-auto'>
+              <img src="./face.webp" className="md:w-full h-1/3 md:h-full object-cover" alt="Face"/>
             </div>
         </div>
         <p>Yo uare here</p>
