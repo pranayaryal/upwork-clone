@@ -220,7 +220,7 @@ export const FrontPage = () => {
           </div>
           <div className='flex space-x-2'>
             <p>Logo</p>
-            <div clasName="flex flex-col space-y-4">
+            <div className="flex flex-col space-y-4">
               <p className='text-2xl'>Work with the best without breaking the bank.</p>
               <p className='text-gray-600 text-sm mt-1'>Upwork makes it affordable to
               up your work and take advantage of low transaction rates.</p>
