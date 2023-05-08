@@ -35,7 +35,7 @@ export const FrontPage = () => {
   return (
     <div>
       <div className="hidden lg:block px-14 py-4">
-        <nav className="flex w-full justify-between items-center">
+        <nav className="flex w-full justify-between items-end">
           <div className="flex justify-center items-center space-x-4">
             <svg xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 102 28"
@@ -197,7 +197,7 @@ export const FrontPage = () => {
         </div>
         <p className='text-gray-500 mt-4'>Trusted by</p>
         <div className='flex'>
-         <img src="./coffee.svg" className="w-36 h-36"/> 
+          <img src="./coffee.svg" className="w-36 h-36" />
         </div>
         <h1 className='text-4xl md:text-5xl tracking-tight font-serif mt-4'>Up your work game, it's free.</h1>
         <div className='flex flex-col mt-8 space-y-4'>
@@ -214,7 +214,7 @@ export const FrontPage = () => {
             <div className="flex flex-col space-y-4">
               <p className='text-2xl'>Post a job and hire top talent.</p>
               <p className='text-gray-600 text-sm mt-1'>Finding talent doesn't have to be a chore.
-              Post a job or we can search for you!</p>
+                Post a job or we can search for you!</p>
             </div>
 
           </div>
@@ -223,7 +223,7 @@ export const FrontPage = () => {
             <div className="flex flex-col space-y-4">
               <p className='text-2xl'>Work with the best without breaking the bank.</p>
               <p className='text-gray-600 text-sm mt-1'>Upwork makes it affordable to
-              up your work and take advantage of low transaction rates.</p>
+                up your work and take advantage of low transaction rates.</p>
             </div>
 
           </div>
@@ -342,29 +342,29 @@ export const FrontPage = () => {
       </div>
       <div className="w-full md:px-8 lg:px-52">
         <div className="flex flex-col-reverse md:flex-row w-full">
-            <div className="w-full md:w-3/5 bg-green-800 px-4 py-4 md:py-6 md:p-8 lg:px-12 lg:py-8">
-              <p className='text-xl text-white'>Enterprise Suite</p>
-              <h1 className="text-4xl text-white md:text-5xl leading-10 lg:leading-11 font-serif mt-4 lg:mt-8">
-              This is how<br/>good companies<br/>
+          <div className="w-full md:w-3/5 bg-green-800 px-4 py-4 md:py-6 md:p-8 lg:px-12 lg:py-8">
+            <p className='text-xl text-white'>Enterprise Suite</p>
+            <h1 className="text-4xl text-white md:text-5xl leading-10 lg:leading-11 font-serif mt-4 lg:mt-8">
+              This is how<br />good companies<br />
               find good company.</h1>
-              <p className="text-white text-lg leading-6 mt-2 md:mt-5 lg:mt-8">
+            <p className="text-white text-lg leading-6 mt-2 md:mt-5 lg:mt-8">
               Access the top 1% of talent on Upwork, and
               a full suite of hybrid workforce management
               tools. This is how innovation works now.
-              </p>
-              <div className='flex space-x-2 mt-4 md:mt-4 lg:mt-8'>
-                <p className='text-white'>Icon</p>
-                <p className='text-white'>Access expert talent to fill your skill gaps</p>
-              </div>
-              <div className='flex space-x-2 mt-2'>
-                <p className='text-white'>Icon</p>
-                <p className='text-white'>Control your workflow: hire, classify and pay your talent</p>
-              </div>
-              <div className='flex space-x-3 mt-2'>
-                
-                <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                         viewBox="0 0 64 64" enable-background="new 0 0 64 64"
-                    className="w-4 h-4 text-violet-500 mt-1">
+            </p>
+            <div className='flex space-x-2 mt-4 md:mt-4 lg:mt-8'>
+              <p className='text-white'>Icon</p>
+              <p className='text-white'>Access expert talent to fill your skill gaps</p>
+            </div>
+            <div className='flex space-x-2 mt-2'>
+              <p className='text-white'>Icon</p>
+              <p className='text-white'>Control your workflow: hire, classify and pay your talent</p>
+            </div>
+            <div className='flex space-x-3 mt-2'>
+
+              <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 64 64" enable-background="new 0 0 64 64"
+                className="w-4 h-4 text-violet-500 mt-1">
                 <path fill="white" d="M57,39.998V40h-1V29.998c0.553,0,1-0.447,1-1v-4c0-13.807-11.193-25-25-25s-25,11.193-25,25v4
                         c0,0.553,0.447,1,1,1v10H7c-3.866,0-7,3.134-7,7V57c0,3.865,3.134,7,7,7v-0.002h5c2.211,0,4-1.789,4-4v-16
                         c0-1.479-0.809-2.754-2-3.445V29.998c0.553,0,1-0.447,1-1v-4c0-9.389,7.611-17,17-17s17,7.611,17,17v4c0,0.553,0.447,1,1,1v10.555
@@ -373,23 +373,76 @@ export const FrontPage = () => {
                         c1.104,0,2,0.896,2,2V59.998z M10,39.998v-10h2v10H10z M32,5.998c-10.493,0-19,8.506-19,19v3H9v-3c0-12.703,10.298-23,23-23
                         s23,10.297,23,23v3h-4v-3C51,14.504,42.493,5.998,32,5.998z M54,29.998V40h-2V29.998H54z M56,62h-4c-1.104,0-2-0.896-2-2V44
                         c0-1.105,0.896-2,2-2h4V62z M62,57c0,2.418-1.719,4.435-4,4.898v-19.8c2.282,0.464,4,2.481,4,4.899V57z"/>
-                </svg>
-                <p className='text-white'>Partner with Upwork for end-to-end support</p>
-              </div>
-              <button className="mt-4 md:mt-8 lg:mt-16 bg-white w-2/5 md:w-2/5 lg:w-1/5 text-green-800 px-1 py-2 rounded-full">Learn More</button>
+              </svg>
+              <p className='text-white'>Partner with Upwork for end-to-end support</p>
             </div>
-            <div className='md:w-2/5 md:h-auto'>
-              <img src="./face.webp" className="h-56 w-full md:w-full md:h-full object-cover md:object-center object-top" alt="Face"/>
-            </div>
+            <button className="mt-4 md:mt-8 lg:mt-16 bg-white w-2/5 md:w-2/5 lg:w-1/5 text-green-800 px-1 py-2 rounded-full">Learn More</button>
+          </div>
+          <div className='md:w-2/5 md:h-auto'>
+            <img src="./face.webp" className="h-56 w-full md:w-full md:h-full object-cover md:object-center object-top" alt="Face" />
+          </div>
         </div>
-        <div class="text-white mt-8 p-4 bg-[url('../public/face.webp')] bg-no-repeat bg-cover bg-top">
-	  <p>For clients</p>
-	  <h1 className='mt-16 text-5xl font-serif'>Find talent your way</h1>
-	  <p className='mt-4'>Work with the largest network of independent professionals
-	  and get things done - from quick turnarounds to big transformations.</p>
-	
-	</div>
+        <div class="text-white mt-8 p-4 md:p-8 bg-[url('../public/computer2.jpg')] bg-no-repeat bg-cover bg-top">
+          <p>For clients</p>
+          <div className='flex flex-col md:flex-row md:justify-start space-x-8 items-end space-y-3 md:space-y-0'>
+            <div className='flex flex-col w:full md:w-1/3'>
+              <div className='flex flex-col space-y-5'>
+                <h1 className='mt-8 md:mt-16 text-4xl md:text-7xl font-serif'>Find talent <br />your way</h1>
+                <p className='mt-4 text-sm'>Work with the largest network of independent <br /> professionals
+                  and get things done - from quick turnarounds to big transformations.</p>
+                <div className='p-4 bg-green-700 rounded-lg space-y-3'>
+                  <h1 className='mt-2 md:mt-0 text-xl md:text-4xl'>Post a job <br />and hire a pro</h1>
+                  <p className='ml-40 md:ml-0 text-sm'>Talent Marketplace</p>
+                </div>
+              </div>
+            </div>
+            <div className='h-1/3 p-4 bg-green-700 rounded-lg w-full md:w-1/3 space-y-3'>
+              <h1 className='mt-2 md:mt-0 text-xl md:text-4xl'>Browse and <br />buy projects</h1>
+              <p className='ml-48 md:ml-0 text-sm'>Project Catalog</p>
+            </div>
+            <div className='h-1/3 p-4 bg-green-700 rounded-lg w-full md:w-1/3 space-y-3'>
+              <h1 className='mt-2 md:mt-0 text-xl md:text-4xl'>Let us help you find <br />the right talent</h1>
+              <p className='ml-48 text-sm md:ml-0'>Talent Scout</p>
+            </div>
+
+          </div>
+
+
+        </div>
+
+        <div className='px-8 py-16 mt-16 bg-pink-50 rounded-xl'>
+          <h1 className='text-4xl md:text-7xl tracking-tight font-serif mt-4'>Why businesses turn <br/>to Upwork.</h1>
+          <div className='flex flex-col mt-8 space-y-4'>
+            <div className='flex space-x-2'>
+              <p>Logo</p>
+              <div className="flex flex-col space-y-1">
+                <p className='text-4xl tracking-tight'>Proof of quality.</p>
+                <p className='text-gray-600 mt-1'>Check any pro’s work samples, client reviews, and identity <br/>verification</p>
+              </div>
+
+            </div>
+            <div className='flex space-x-2'>
+              <p>Logo</p>
+              <div className="flex flex-col space-y-1">
+                <p className='text-4xl tracking-tight'>No cost until you hire.</p>
+                <p className='text-gray-600'>Interview potential fits for your job, negotiate rates, and only <br/>
+                pay for work you approve.</p>
+              </div>
+
+            </div>
+            <div className='flex space-x-2'>
+              <p>Logo</p>
+              <div className="flex flex-col space-y-1">
+                <p className='text-4xl tracking-tight'>Safe and secure.</p>
+                <p className='text-gray-600 mt-1'>Focus on your work knowing we help protect your data and <br/>
+                privacy. We’re here with 24/7 support if you need it.</p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
       </div>
-    </div>
+    </div >
   )
 }
