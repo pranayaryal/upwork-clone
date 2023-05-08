@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = { 
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -20,6 +20,9 @@ module.exports = {
       },
       height: {
         '100': '28rem',
+      },
+      backgroundImage: {
+        'hero-pattern': "url('../public/face.webp')",
       }
     },
   },

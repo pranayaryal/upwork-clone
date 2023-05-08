@@ -166,7 +166,7 @@ export const FrontPage = () => {
                     See Resources
                   </a>
 
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
                     className="w-4 h-4 mt-1">
                     <path stroke-linecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
@@ -378,11 +378,17 @@ export const FrontPage = () => {
               </div>
               <button className="mt-4 md:mt-8 lg:mt-16 bg-white w-2/5 md:w-2/5 lg:w-1/5 text-green-800 px-1 py-2 rounded-full">Learn More</button>
             </div>
-            <div className='md:block w-full h-full md:w-2/5 md:h-auto'>
-              <img src="./face.webp" className="md:w-full h-1/3 md:h-full object-cover" alt="Face"/>
+            <div className='md:w-2/5 md:h-auto'>
+              <img src="./face.webp" className="h-56 w-full md:w-full md:h-full object-cover md:object-center object-top" alt="Face"/>
             </div>
         </div>
-        <p>Yo uare here</p>
+        <div class="text-white mt-8 p-4 bg-[url('../public/face.webp')] bg-no-repeat bg-cover bg-top">
+	  <p>For clients</p>
+	  <h1 className='mt-16 text-5xl font-serif'>Find talent your way</h1>
+	  <p className='mt-4'>Work with the largest network of independent professionals
+	  and get things done - from quick turnarounds to big transformations.</p>
+	
+	</div>
       </div>
     </div>
   )
