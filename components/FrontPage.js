@@ -390,17 +390,17 @@ export const FrontPage = () => {
                 <h1 className='mt-8 md:mt-16 text-4xl md:text-7xl font-serif'>Find talent <br />your way</h1>
                 <p className='mt-4 text-sm'>Work with the largest network of independent <br /> professionals
                   and get things done - from quick turnarounds to big transformations.</p>
-                <div className='p-4 bg-green-700 rounded-lg space-y-3'>
+                <div className='p-4 hover:bg-white hover:text-green-700 bg-green-700 rounded-lg space-y-3'>
                   <h1 className='mt-2 md:mt-0 text-xl md:text-4xl'>Post a job <br />and hire a pro</h1>
                   <p className='ml-40 md:ml-0 text-sm'>Talent Marketplace</p>
                 </div>
               </div>
             </div>
-            <div className='h-1/3 p-4 bg-green-700 rounded-lg w-full md:w-1/3 space-y-3'>
+            <div className='h-1/3 p-4 bg-green-700 rounded-lg hover:bg-white hover:text-green-700 w-full md:w-1/3 space-y-3'>
               <h1 className='mt-2 md:mt-0 text-xl md:text-4xl'>Browse and <br />buy projects</h1>
               <p className='ml-48 md:ml-0 text-sm'>Project Catalog</p>
             </div>
-            <div className='h-1/3 p-4 bg-green-700 rounded-lg w-full md:w-1/3 space-y-3'>
+            <div className='h-1/3 p-4 bg-green-700 hover:bg-white hover:text-green-700 rounded-lg w-full md:w-1/3 space-y-3'>
               <h1 className='mt-2 md:mt-0 text-xl md:text-4xl'>Let us help you find <br />the right talent</h1>
               <p className='ml-48 text-sm md:ml-0'>Talent Scout</p>
             </div>
@@ -411,13 +411,13 @@ export const FrontPage = () => {
         </div>
 
         <div className='px-8 py-16 mt-16 bg-pink-50 rounded-xl'>
-          <h1 className='text-4xl md:text-7xl tracking-tight font-serif mt-4'>Why businesses turn <br/>to Upwork.</h1>
+          <h1 className='text-4xl md:text-7xl tracking-tight font-serif mt-4'>Why businesses turn <br />to Upwork.</h1>
           <div className='flex flex-col mt-8 space-y-4'>
             <div className='flex space-x-2'>
               <p>Logo</p>
               <div className="flex flex-col space-y-1">
                 <p className='text-4xl tracking-tight'>Proof of quality.</p>
-                <p className='text-gray-600 mt-1'>Check any pro’s work samples, client reviews, and identity <br/>verification</p>
+                <p className='text-gray-600 mt-1'>Check any pro’s work samples, client reviews, and identity <br />verification</p>
               </div>
 
             </div>
@@ -425,17 +425,22 @@ export const FrontPage = () => {
               <p>Logo</p>
               <div className="flex flex-col space-y-1">
                 <p className='text-4xl tracking-tight'>No cost until you hire.</p>
-                <p className='text-gray-600'>Interview potential fits for your job, negotiate rates, and only <br/>
-                pay for work you approve.</p>
+                <p className='text-gray-600'>Interview potential fits for your job, negotiate rates, and only <br />
+                  pay for work you approve.</p>
               </div>
 
             </div>
             <div className='flex space-x-2'>
-              <p>Logo</p>
+              <svg xmlns="http://www.w3.org/2000/svg"
+              fill="none" viewBox="0 0 24 24"
+              className='w-h h-6 mt-1'
+              strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+              </svg>
               <div className="flex flex-col space-y-1">
                 <p className='text-4xl tracking-tight'>Safe and secure.</p>
-                <p className='text-gray-600 mt-1'>Focus on your work knowing we help protect your data and <br/>
-                privacy. We’re here with 24/7 support if you need it.</p>
+                <p className='text-gray-600 mt-1'>Focus on your work knowing we help protect your data and <br />
+                  privacy. We’re here with 24/7 support if you need it.</p>
               </div>
 
             </div>
