@@ -410,41 +410,81 @@ export const FrontPage = () => {
 
         </div>
 
-        <div className='px-8 py-16 mt-16 bg-pink-50 rounded-xl'>
-          <h1 className='text-4xl md:text-7xl tracking-tight font-serif mt-4'>Why businesses turn <br />to Upwork.</h1>
-          <div className='flex flex-col mt-8 space-y-4'>
-            <div className='flex space-x-2'>
-              <p>Logo</p>
-              <div className="flex flex-col space-y-1">
-                <p className='text-4xl tracking-tight'>Proof of quality.</p>
-                <p className='text-gray-600 mt-1'>Check any pro’s work samples, client reviews, and identity <br />verification</p>
+        <div className='mt-16'>
+          <div className='flex'>
+            <div className='w-2/3 bg-pink-50 rounded-xl px-8 py-16'>
+              <h1 className='text-4xl md:text-7xl tracking-tight font-serif mt-4'>Why businesses turn <br />to Upwork.</h1>
+              <div className='flex flex-col mt-8 space-y-4'>
+                <div className='flex space-x-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    className='w-6 h-6 mt-1' fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                  </svg>
+
+                  <div className="flex flex-col space-y-1">
+                    <p className='text-4xl tracking-tight'>Proof of quality.</p>
+                    <p className='text-gray-600 mt-1'>Check any pro’s work samples, client reviews, and identity <br />verification</p>
+                  </div>
+
+                </div>
+                <div className='flex space-x-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    className='mt-1 w-6 h-6' fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+
+                  <div className="flex flex-col space-y-1">
+                    <p className='text-4xl tracking-tight'>No cost until you hire.</p>
+                    <p className='text-gray-600'>Interview potential fits for your job, negotiate rates, and only <br />
+                      pay for work you approve.</p>
+                  </div>
+
+                </div>
+                <div className='flex space-x-2'>
+                  <svg xmlns="http://www.w3.org/2000/svg"
+                    fill="none" viewBox="0 0 24 24"
+                    className='w-h h-6 mt-1'
+                    strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                  </svg>
+                  <div className="flex flex-col space-y-1">
+                    <p className='text-4xl tracking-tight'>Safe and secure.</p>
+                    <p className='text-gray-600 mt-1'>Focus on your work knowing we help protect your data and <br />
+                      privacy. We’re here with 24/7 support if you need it.</p>
+                  </div>
+
+                </div>
+
               </div>
 
             </div>
-            <div className='flex space-x-2'>
-              <p>Logo</p>
-              <div className="flex flex-col space-y-1">
-                <p className='text-4xl tracking-tight'>No cost until you hire.</p>
-                <p className='text-gray-600'>Interview potential fits for your job, negotiate rates, and only <br />
-                  pay for work you approve.</p>
+            <div className="flex flex-col w-1/3 bg-green-700 text-white rounded-xl px-8 py-8">
+              <h1 className='text-4xl font-serif leading-8'>We're <br/>the world's work marketplace</h1>
+              <div className='flex space-x-2 mt-8'>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  className='w-8 h-8 mt-1' fill="white" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>
+
+                <div className="flex flex-col space-y-1">
+                  <p className='text-4xl tracking-tight'>4.9/5</p>
+                  <p className='mt-1'>Clients rate professionals on Upwork</p>
+                </div>
+
               </div>
+              <div className='flex space-x-2 mt-8'>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                  className='w-8 h-8 mt-1' fill="white" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
+                </svg>
 
-            </div>
-            <div className='flex space-x-2'>
-              <svg xmlns="http://www.w3.org/2000/svg"
-              fill="none" viewBox="0 0 24 24"
-              className='w-h h-6 mt-1'
-              strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
-              </svg>
-              <div className="flex flex-col space-y-1">
-                <p className='text-4xl tracking-tight'>Safe and secure.</p>
-                <p className='text-gray-600 mt-1'>Focus on your work knowing we help protect your data and <br />
-                  privacy. We’re here with 24/7 support if you need it.</p>
+                <div className="flex flex-col space-y-1">
+                  <p className='text-4xl tracking-tight'>Award Winner</p>
+                  <p className='mt-1'>G2’s 2021 Best Software Awards</p>
+                </div>
+
               </div>
-
             </div>
-
           </div>
         </div>
       </div>
