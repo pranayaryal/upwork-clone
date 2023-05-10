@@ -177,7 +177,7 @@ export const FrontPage = () => {
           </div>
 
         </div>}
-      <div className="px-4 md:px-8 lg:px-52">
+      <div className="px-4 md:px-8 lg:px-52 z-1000">
         <div className="flex flex-col md:flex-row md:space-x-4 mt-8 md:mt-10">
           <div className="flex flex-col items-left justify-center w-full">
             <h1 className="md:text-7xl text-6xl font-serif text-indigo-500 tracking-tight">
@@ -410,11 +410,11 @@ export const FrontPage = () => {
 
         </div>
 
-        <div className='mt-16'>
-          <div className='flex'>
-            <div className='w-2/3 bg-pink-50 rounded-xl px-8 py-16'>
+        <div className='mt-4 md:mt-16'>
+          <div className='flex flex-col md:flex-row'>
+            <div className='w-full md:w-2/3 bg-pink-50 md:rounded-xl px-4 py-8 md:px-8 md:py-16'>
               <h1 className='text-4xl md:text-7xl tracking-tight font-serif mt-4'>Why businesses turn <br />to Upwork.</h1>
-              <div className='flex flex-col mt-8 space-y-4'>
+              <div className='flex flex-col mt-4 md:mt-8 space-y-4'>
                 <div className='flex space-x-2'>
                   <svg xmlns="http://www.w3.org/2000/svg"
                     className='w-6 h-6 mt-1' fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
@@ -422,7 +422,7 @@ export const FrontPage = () => {
                   </svg>
 
                   <div className="flex flex-col space-y-1">
-                    <p className='text-4xl tracking-tight'>Proof of quality.</p>
+                    <p className='text-2xl md:text-4xl tracking-tight'>Proof of quality.</p>
                     <p className='text-gray-600 mt-1'>Check any pro’s work samples, client reviews, and identity <br />verification</p>
                   </div>
 
@@ -434,7 +434,7 @@ export const FrontPage = () => {
                   </svg>
 
                   <div className="flex flex-col space-y-1">
-                    <p className='text-4xl tracking-tight'>No cost until you hire.</p>
+                    <p className='text-2xl md:text-4xl tracking-tight'>No cost until you hire.</p>
                     <p className='text-gray-600'>Interview potential fits for your job, negotiate rates, and only <br />
                       pay for work you approve.</p>
                   </div>
@@ -448,7 +448,7 @@ export const FrontPage = () => {
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
                   </svg>
                   <div className="flex flex-col space-y-1">
-                    <p className='text-4xl tracking-tight'>Safe and secure.</p>
+                    <p className='text-2xl md:text-4xl tracking-tight'>Safe and secure.</p>
                     <p className='text-gray-600 mt-1'>Focus on your work knowing we help protect your data and <br />
                       privacy. We’re here with 24/7 support if you need it.</p>
                   </div>
@@ -458,8 +458,8 @@ export const FrontPage = () => {
               </div>
 
             </div>
-            <div className="flex flex-col w-1/3 bg-green-700 text-white rounded-xl px-8 py-8">
-              <h1 className='text-4xl font-serif leading-8'>We're <br/>the world's work marketplace</h1>
+            <div className="flex w-full flex-col md:w-1/3 bg-green-700 text-white md:rounded-xl px-4 md:px-8 py-8">
+              <h1 className='md:mt-60 text-4xl font-serif leading-8'>We're <br />the world's work marketplace</h1>
               <div className='flex space-x-2 mt-8'>
                 <svg xmlns="http://www.w3.org/2000/svg"
                   className='w-8 h-8 mt-1' fill="white" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
@@ -467,7 +467,7 @@ export const FrontPage = () => {
                 </svg>
 
                 <div className="flex flex-col space-y-1">
-                  <p className='text-4xl tracking-tight'>4.9/5</p>
+                  <p className='text-2xl md:text-4xl tracking-tight'>4.9/5</p>
                   <p className='mt-1'>Clients rate professionals on Upwork</p>
                 </div>
 
@@ -479,12 +479,37 @@ export const FrontPage = () => {
                 </svg>
 
                 <div className="flex flex-col space-y-1">
-                  <p className='text-4xl tracking-tight'>Award Winner</p>
+                  <p className='text-2xl md:text-4xl tracking-tight'>Award Winner</p>
                   <p className='mt-1'>G2’s 2021 Best Software Awards</p>
                 </div>
 
               </div>
             </div>
+          </div>
+        </div>
+        <div className='px-4 py-8 md:hidden w-full'>
+          <p className='text-4xl font-serif leading-9 tracking-tight'>Sign up to hire <br />talent for any job</p>
+          <button className='rounded-full px-5 py-2 bg-green-800 text-white mt-5'>Find talent</button>
+
+        </div>
+        <div className='flex mt-16 w-full rounded-xl'>
+          <img src='./girlWorking.jpg' className='w-1/2 object-cover object-right' />
+          <div className='flex flex-col justify-start text-white w-1/2 bg-blue-600 px-8'>
+            <div className='flex flex-col h-2/3 border-b'>
+              <h1 className='text-2xl mt-8'>For talent</h1>
+              <h1 className='text-7xl font-serif mt-4'>Find great <br />work</h1>
+              <p className='text-lg tracking-tight leading-6 mt-8 mb-48'>Meet clients you’re excited to work with and take<br />
+                your career or business to new heights.</p>
+
+            </div>
+
+            <div className='flex space-x-2 px-4 py-8'>
+              <p className='text-lg leading-6'>Find opportunities for <br />every stage of your freelance career</p>
+              <p className='text-lg leading-6'>Control when, where, and how you work</p>
+              <p className='text-lg leading-6'>Explore different ways to earn</p>
+            </div>
+
+            <button className='bg-white rounded-full text-blue-600 w-1/3 mt-8 p-2'>Find oportunities</button>
           </div>
         </div>
       </div>

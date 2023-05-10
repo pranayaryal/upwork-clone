@@ -9,7 +9,7 @@ const ArrowRight = (props) => {
             <path vector-effect="non-scaling-stroke"
                 stroke="var(--icon-color, #001e00)"
                 stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                stroke-width="1.5" d="M9 6l5 6-5 6"></path>
+                strokeWidth="1.5" d="M9 6l5 6-5 6"></path>
         </svg>
 
     )
