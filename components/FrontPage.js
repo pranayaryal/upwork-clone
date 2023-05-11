@@ -384,28 +384,25 @@ export const FrontPage = () => {
         </div>
         <div class="text-white mt-8 p-4 md:p-8 bg-[url('../public/computer2.jpg')] bg-no-repeat bg-cover bg-top">
           <p>For clients</p>
-          <div className='flex flex-col md:flex-row md:justify-start space-x-8 items-end space-y-3 md:space-y-0'>
-            <div className='flex flex-col w:full md:w-1/3'>
-              <div className='flex flex-col space-y-5'>
-                <h1 className='mt-8 md:mt-16 text-4xl md:text-7xl font-serif'>Find talent <br />your way</h1>
-                <p className='mt-4 text-sm'>Work with the largest network of independent <br /> professionals
-                  and get things done - from quick turnarounds to big transformations.</p>
-                <div className='p-4 hover:bg-white hover:text-green-700 bg-green-700 rounded-lg space-y-3'>
-                  <h1 className='mt-2 md:mt-0 text-xl md:text-4xl'>Post a job <br />and hire a pro</h1>
-                  <p className='ml-40 md:ml-0 text-sm'>Talent Marketplace</p>
-                </div>
-              </div>
+          <h1 className='mt-8 md:mt-16 text-4xl lg:text-7xl font-serif'>Find talent <br />your way</h1>
+          <p className='mt-4 text-sm w-1/2'>Work with the largest network of independent <br /> professionals
+            and get things done - from quick turnarounds to big transformations.</p>
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:justify-between md:space-x-8 mt-4 md:mt-8">
+            <div className='p-4 hover:bg-white hover:text-green-700 bg-green-700 rounded-lg w-full md:w-1/3 
+              lg:h-[16vh] md:h-[12vh]'>
+              <h1 className='mt-2 md:mt-0 text-xl md:text-2xl lg:text-4xl leading-7 tracking-tight'>Post a job</h1>
+              <p className='ml-40 md:ml-0 text-sm mt-12'>Talent Marketplace</p>
             </div>
-            <div className='h-1/3 p-4 bg-green-700 rounded-lg hover:bg-white hover:text-green-700 w-full md:w-1/3 space-y-3'>
-              <h1 className='mt-2 md:mt-0 text-xl md:text-4xl'>Browse and <br />buy projects</h1>
-              <p className='ml-48 md:ml-0 text-sm'>Project Catalog</p>
+            <div className='md:h-[12vh] lg:h-[16vh] p-4 bg-green-700 rounded-lg hover:bg-white hover:text-green-700 w-full md:w-1/3'>
+              <h1 className='mt-2 md:mt-0 text-xl md:text-2xl lg:text-4xl leading-7 tracking-tight'>Browse and <br />buy projects</h1>
+              <p className='ml-48 md:ml-0 text-sm mt-4'>Project Catalog</p>
             </div>
-            <div className='h-1/3 p-4 bg-green-700 hover:bg-white hover:text-green-700 rounded-lg w-full md:w-1/3 space-y-3'>
-              <h1 className='mt-2 md:mt-0 text-xl md:text-4xl'>Let us help you find <br />the right talent</h1>
-              <p className='ml-48 text-sm md:ml-0'>Talent Scout</p>
+            <div className='md:h-[12vh] lg:h-[16vh] p-4 bg-green-700 hover:bg-white hover:text-green-700 rounded-lg w-full md:w-1/3'>
+              <h1 className='mt-2 md:mt-0 text-xl md:text-2xl lg:text-4xl leading-7 tracking-tight'>Let us help you find <br />the right talent</h1>
+              <p className='ml-48 text-sm md:ml-0 mt-4'>Talent Scout</p>
             </div>
-
           </div>
+
 
 
         </div>
