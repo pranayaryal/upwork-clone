@@ -340,14 +340,14 @@ export const FrontPage = () => {
         </div>
 
       </div>
-      <div className="w-full md:px-8 lg:px-52">
+      <div className="w-full md:px-4 lg:px-52">
         <div className="flex flex-col-reverse md:flex-row w-full">
           <div className="w-full md:w-3/5 bg-green-800 px-4 py-4 md:py-6 md:p-8 lg:px-12 lg:py-8">
             <p className='text-xl text-white'>Enterprise Suite</p>
-            <h1 className="text-4xl text-white md:text-5xl leading-10 lg:leading-11 font-serif mt-4 lg:mt-8">
+            <h1 className="text-4xl text-white md:text-5xl leading-8 lg:leading-11 font-serif mt-4 lg:mt-8">
               This is how<br />good companies<br />
               find good company.</h1>
-            <p className="text-white text-lg leading-6 mt-2 md:mt-5 lg:mt-8">
+            <p className="text-white text-lg leading-6 mt-3 md:mt-5 lg:mt-8">
               Access the top 1% of talent on Upwork, and
               a full suite of hybrid workforce management
               tools. This is how innovation works now.
@@ -390,16 +390,16 @@ export const FrontPage = () => {
           <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:justify-between md:space-x-8 mt-4 md:mt-8">
             <div className='p-4 hover:bg-white hover:text-green-700 bg-green-700 rounded-lg w-full md:w-1/3 
               lg:h-[16vh] md:h-[12vh]'>
-              <h1 className='mt-2 md:mt-0 text-xl md:text-2xl lg:text-4xl leading-7 tracking-tight'>Post a job</h1>
-              <p className='ml-40 md:ml-0 text-sm mt-12'>Talent Marketplace</p>
+              <h1 className='w-2/5 md:w-4/5 lg:w-2/3 mt-4 md:mt-0 text-xl lg:text-4xl leading-7 tracking-tight'>Post a job and hire a pro</h1>
+              <p className='ml-40 md:ml-0 text-sm mt-2 md:mt-8 lg:mt-4'>Talent Marketplace</p>
             </div>
             <div className='md:h-[12vh] lg:h-[16vh] p-4 bg-green-700 rounded-lg hover:bg-white hover:text-green-700 w-full md:w-1/3'>
-              <h1 className='mt-2 md:mt-0 text-xl md:text-2xl lg:text-4xl leading-7 tracking-tight'>Browse and <br />buy projects</h1>
-              <p className='ml-48 md:ml-0 text-sm mt-4'>Project Catalog</p>
+              <h1 className='w-2/5 md:w-4/5 lg:w-2/3 mt-2 md:mt-0 text-xl lg:text-4xl leading-7 tracking-tight'>Browse and <br />buy projects</h1>
+              <p className='ml-48 md:ml-0 text-sm mt-2 md:mt-8 lg:mt-4'>Project Catalog</p>
             </div>
             <div className='md:h-[12vh] lg:h-[16vh] p-4 bg-green-700 hover:bg-white hover:text-green-700 rounded-lg w-full md:w-1/3'>
-              <h1 className='mt-2 md:mt-0 text-xl md:text-2xl lg:text-4xl leading-7 tracking-tight'>Let us help you find <br />the right talent</h1>
-              <p className='ml-48 text-sm md:ml-0 mt-4'>Talent Scout</p>
+              <h1 className='mt-2 md:mt-0 text-xl lg:text-4xl leading-7 tracking-tight'>Let us help you find <br />the right talent</h1>
+              <p className='ml-48 text-sm md:ml-0 mt-2 md:mt-8 lg:mt-4'>Talent Scout</p>
             </div>
           </div>
 
@@ -407,10 +407,10 @@ export const FrontPage = () => {
 
         </div>
 
-        <div className='mt-4 md:mt-16'>
+        <div className='mt-4 md:mt-16 md:h-[60vh]'>
           <div className='flex flex-col md:flex-row'>
-            <div className='w-full md:w-2/3 bg-pink-50 md:rounded-xl px-4 py-8 md:px-8 md:py-16'>
-              <h1 className='text-4xl md:text-7xl tracking-tight font-serif mt-4'>Why businesses turn <br />to Upwork.</h1>
+            <div className='w-full md:w-2/3 bg-pink-50 md:rounded-xl px-4 py-8  md:px-8 md:py-6 lg:py-16'>
+              <h1 className='text-4xl lg:text-7xl tracking-tight font-serif mt-4'>Why businesses turn <br />to Upwork.</h1>
               <div className='flex flex-col mt-4 md:mt-8 space-y-4'>
                 <div className='flex space-x-2'>
                   <svg xmlns="http://www.w3.org/2000/svg"
@@ -456,7 +456,7 @@ export const FrontPage = () => {
 
             </div>
             <div className="flex w-full flex-col md:w-1/3 bg-green-700 text-white md:rounded-xl px-4 md:px-8 py-8">
-              <h1 className='md:mt-60 text-4xl font-serif leading-8'>We're <br />the world's work marketplace</h1>
+              <h1 className='md:mt-24 lg:mt-60 text-4xl font-serif leading-8'>We're <br />the world's work marketplace</h1>
               <div className='flex space-x-2 mt-8'>
                 <svg xmlns="http://www.w3.org/2000/svg"
                   className='w-8 h-8 mt-1' fill="white" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
@@ -464,7 +464,7 @@ export const FrontPage = () => {
                 </svg>
 
                 <div className="flex flex-col space-y-1">
-                  <p className='text-2xl md:text-4xl tracking-tight'>4.9/5</p>
+                  <p className='lg:text-4xl md:text-3xl tracking-tight'>4.9/5</p>
                   <p className='mt-1'>Clients rate professionals on Upwork</p>
                 </div>
 
@@ -476,7 +476,7 @@ export const FrontPage = () => {
                 </svg>
 
                 <div className="flex flex-col space-y-1">
-                  <p className='text-2xl md:text-4xl tracking-tight'>Award Winner</p>
+                  <p className='md:text-2xl lg:text-4xl tracking-tight'>Award Winner</p>
                   <p className='mt-1'>G2’s 2021 Best Software Awards</p>
                 </div>
 
@@ -489,24 +489,23 @@ export const FrontPage = () => {
           <button className='rounded-full px-5 py-2 bg-green-800 text-white mt-5'>Find talent</button>
 
         </div>
-        <div className='flex mt-16 w-full rounded-xl'>
-          <img src='./girlWorking.jpg' className='w-1/2 object-cover object-right' />
-          <div className='flex flex-col justify-start text-white w-1/2 bg-blue-600 px-8'>
+        <div className='flex flex-col md:flex-row mt-4 lg:mt-16 w-full rounded-xl lg:h-[65vh]'>
+          <img src='./girlWorking.jpg' className='w-full md:w-1/2 object-cover object-right md:object-center' />
+          <div className='flex flex-col justify-start text-white w-full md:w-1/2 bg-blue-600 p-4 lg:p-8'>
             <div className='flex flex-col h-2/3 border-b'>
-              <h1 className='text-2xl mt-8'>For talent</h1>
-              <h1 className='text-7xl font-serif mt-4'>Find great <br />work</h1>
-              <p className='text-lg tracking-tight leading-6 mt-8 mb-48'>Meet clients you’re excited to work with and take<br />
+              <h1 className='md:text-lg lg:text-2xl mt-1 md:mt-2 lg:mt-8'>For talent</h1>
+              <h1 className='text-5xl lg:text-7xl font-serif mt-4'>Find great <br />work</h1>
+              <p className='w-full lg:w-2/3 text-sm lg:text-lg tracking-tight leading-6 mt-4 lg:mt-8 mb-20 lg:mb-48'>Meet clients you’re excited to work with and take
                 your career or business to new heights.</p>
-
             </div>
 
-            <div className='flex space-x-2 px-4 py-8'>
-              <p className='text-lg leading-6'>Find opportunities for <br />every stage of your freelance career</p>
-              <p className='text-lg leading-6'>Control when, where, and how you work</p>
-              <p className='text-lg leading-6'>Explore different ways to earn</p>
+            <div className='grid grid-cols-2 lg:grid-cols-3 gap-x-2 md:gap-x-3 gap-y-4 lg:gap-y-0 px-1 py-4 md:px-2 md:py-4'>
+              <p className='text-sm lg:text-lg leading-1 tracking-tighter md:tracking-tight'>Find opportunities for every stage of your freelance career</p>
+              <p className='text-sm lg:text-lg leading-1 tracking-tighter md:tracking-tight'>Control when, where and how you work</p>
+              <p className='text-sm lg:text-lg leading-1 tracking-tighter md:tracking-tight'>Explore different ways to earn</p>
             </div>
 
-            <button className='bg-white rounded-full text-blue-600 w-1/3 mt-8 p-2'>Find oportunities</button>
+            <button className='bg-white rounded-full text-blue-600 w-1/2 lg:w-1/3 md:mt-8 p-2'>Find oportunities</button>
           </div>
         </div>
       </div>
