@@ -126,7 +126,7 @@ export const FrontPage = () => {
         </div>
       }
       {isWhyOpen &&
-        <div className="h-[40vh] z-50 w-full shadow">
+        <div className="h-[40vh] z-0 w-full shadow">
           <div className="w-full px-11 py-4 flex items-top justify-start space-x-20">
             <div className='h-[25vh] grid grid-cols-2 gap-x-12 gap-y-0 w-[1/5] p-4 hover:bg-pink-50'>
               <div className='p-2'>
@@ -177,7 +177,7 @@ export const FrontPage = () => {
           </div>
 
         </div>}
-      <div className="px-4 md:px-8 lg:px-52 z-1000">
+      <div className="px-4 md:px-8 lg:px-52 -z-50">
         <div className="flex flex-col md:flex-row md:space-x-4 mt-8 md:mt-10">
           <div className="flex flex-col items-left justify-center w-full">
             <h1 className="md:text-7xl text-6xl font-serif text-indigo-500 tracking-tight">
@@ -489,12 +489,12 @@ export const FrontPage = () => {
           <button className='rounded-full px-5 py-2 bg-green-800 text-white mt-5'>Find talent</button>
 
         </div>
-        <div className='flex flex-col md:flex-row mt-4 lg:mt-16 w-full rounded-xl lg:h-[65vh]'>
+        <div className='flex flex-col md:flex-row mt-4 lg:mt-16 w-full rounded-xl lg:h-[70vh]'>
           <img src='./girlWorking.jpg' className='w-full md:w-1/2 object-cover object-right md:object-center' />
           <div className='flex flex-col justify-start text-white w-full md:w-1/2 bg-blue-600 p-4 lg:p-8'>
             <div className='flex flex-col h-2/3 border-b'>
-              <h1 className='md:text-lg lg:text-2xl mt-1 md:mt-2 lg:mt-8'>For talent</h1>
-              <h1 className='text-5xl lg:text-7xl font-serif mt-4'>Find great <br />work</h1>
+              <h1 className='md:text-lg lg:text-2xl mt-1 md:mt-2'>For talent</h1>
+              <h1 className='text-5xl lg:text-7xl font-serif mt-4 w-2/3 lg:w-1/2'>Find great work</h1>
               <p className='w-full lg:w-2/3 text-sm lg:text-lg tracking-tight leading-6 mt-4 lg:mt-8 mb-20 lg:mb-48'>Meet clients you’re excited to work with and take
                 your career or business to new heights.</p>
             </div>
@@ -506,6 +506,42 @@ export const FrontPage = () => {
             </div>
 
             <button className='bg-white rounded-full text-blue-600 w-1/2 lg:w-1/3 md:mt-8 p-2'>Find oportunities</button>
+          </div>
+        </div>
+        <div className='mt-8 w-full'>
+          <h1 className='text-5xl font-serif w-4/5 tracking-tight leading-10'>Trusted by leading brands and startups</h1>
+          <div className='flex mt-8 space-x-4 overflow-x-scroll'>
+            <div className='p-4 bg-green-900 text-white rounded-xl'>
+              <div className='flex space-x-2 justify-center'>
+                <p>Logo</p>
+                <p className='text-xl'>Nasdaq</p>
+              </div>
+              <p className='text-xl mt-4 font-serif tracking-tight leading-6'>"Upwork enables us to differentiate ourselves
+                from our competitors and produce content at a high caliber"</p>
+              <p className='mt-3 w-4/5 text-gray-300'>Josh Machiz, Chief Digital Officer</p>
+              <p className='mt-8'>Results</p>
+              <hr className='mt-1'/>
+              <p className='text-2xl mt-1'>Emmy Winning</p>
+              <p className='mt-2 text-gray-300'>Facebook Watch program</p>
+              <p className='text-2xl mt-4'>Millions</p>
+              <p className='mt-2 w-4/5 text-gray-300'>Of impressons generated per client per IPO</p>
+            </div>
+            <div className='p-4 bg-green-900 text-white rounded-xl'>
+              <div className='flex space-x-2 justify-center'>
+                <p>Logo</p>
+                <p className='text-xl'>Nasdaq</p>
+              </div>
+              <p className='text-xl mt-4 font-serif tracking-tight leading-6'>"Upwork enables us to differentiate ourselves
+                from our competitors and produce content at a high caliber"</p>
+              <p className='mt-3 w-4/5 text-gray-300'>Josh Machiz, Chief Digital Officer</p>
+              <p className='mt-8'>Results</p>
+              <hr className='mt-1'/>
+              <p className='text-2xl mt-1'>Emmy Winning</p>
+              <p className='mt-2 text-gray-300'>Facebook Watch program</p>
+              <p className='text-2xl mt-4'>Millions</p>
+              <p className='mt-2 w-4/5 text-gray-300'>Of impressons generated per client per IPO</p>
+            </div>
+
           </div>
         </div>
       </div>
