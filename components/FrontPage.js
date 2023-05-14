@@ -4,11 +4,45 @@ import ArrorRight from './ArrowRight'
 import TalentMarketPlaceLarge from './TalentMarketPlaceLarge'
 import TalentScout from './TalentScout'
 import ProjectCatalog from './ProjectCatalog'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import FindTalentMain from './FindTalentMain'
 import Star from './Star'
 
 export const FrontPage = () => {
+  const [ isDown, setIsDown] = useState(false);
+  const [ startX, setStartX ] = useState(0);
+  const [ scrollLeft, setScrollLeft ] = useState(0);
+
+  useEffect(() => {
+    console.log(`startX after change ${startX}}`)
+  }, [startX])
+
+
+  const handleMouseUp = () => {
+    setIsDown(false);
+    
+  }
+
+
+  const handleMouseDown = (e) => {
+    setIsDown(true);
+    var slider = document.getElementById('slider');
+    setStartX(e.pageX - slider.offsetLeft);
+    setScrollLeft(slider.scrollLeft);
+  }
+
+  const handleMouseMove = (e) => {
+    e.preventDefault();
+    if (!isDown) return; //stop the function from running
+    var slider = document.getElementById('slider');
+    const x = e.pageX - slider.offsetLeft;
+    const walk  = x - startX;
+    slider.scrollLeft = scrollLeft - walk;
+  }
+
+  const handleMouseLeave = () => {
+    setIsDown(false);
+  }
   const hoverTalent = () => {
     setIsTalentOpen(true);
     setIsWorkOpen(false);
@@ -31,6 +65,7 @@ export const FrontPage = () => {
   const [isTalentMarketPlaceHovered, setIsTalentMarketPlaceHovered] = useState(false);
   const [isProjectCatalogHovered, setIsProjectCatalogHovered] = useState(false);
   const [isTalentScoutHovered, setIsTalentScoutHovered] = useState(false);
+
 
   return (
     <div>
@@ -489,7 +524,7 @@ export const FrontPage = () => {
           <button className='rounded-full px-5 py-2 bg-green-800 text-white mt-5'>Find talent</button>
 
         </div>
-        <div className='flex flex-col md:flex-row mt-4 lg:mt-16 w-full rounded-xl lg:h-[70vh]'>
+        <div id='above-slider' className='flex flex-col md:flex-row mt-4 lg:mt-16 w-full rounded-xl lg:h-[70vh]'>
           <img src='./girlWorking.jpg' className='w-full md:w-1/2 object-cover object-right md:object-center' />
           <div className='flex flex-col justify-start text-white w-full md:w-1/2 bg-blue-600 p-4 lg:p-8'>
             <div className='flex flex-col h-2/3 border-b'>
@@ -510,8 +545,15 @@ export const FrontPage = () => {
         </div>
         <div className='mt-8 w-full'>
           <h1 className='text-5xl font-serif w-4/5 tracking-tight leading-10'>Trusted by leading brands and startups</h1>
-          <div className='flex mt-8 space-x-4 overflow-x-scroll'>
-            <div className='p-4 bg-green-900 text-white rounded-xl'>
+          <div 
+
+            onMouseDown={(e) => handleMouseDown(e)}
+            onMouseLeave={() => handleMouseLeave()}
+            onMouseUp={() => handleMouseUp()}
+            onMouseMove={(e) => handleMouseMove(e)}
+            id='slider'
+            className='grid gap-4 grid-flow-col auto-cols-max mt-8 overflow-hidden'>
+            <div className='p-4 bg-green-900 text-white rounded-xl cursor-pointer w-[90vw]'>
               <div className='flex space-x-2 justify-center'>
                 <p>Logo</p>
                 <p className='text-xl'>Nasdaq</p>
@@ -526,7 +568,22 @@ export const FrontPage = () => {
               <p className='text-2xl mt-4'>Millions</p>
               <p className='mt-2 w-4/5 text-gray-300'>Of impressons generated per client per IPO</p>
             </div>
-            <div className='p-4 bg-green-900 text-white rounded-xl'>
+            <div className='p-4 bg-green-900 text-white rounded-xl cursor-pointer w-[90vw]'>
+              <div className='flex space-x-2 justify-center'>
+                <p>Logo</p>
+                <p className='text-xl'>Nasdaq</p>
+              </div>
+              <p className='text-xl mt-4 font-serif tracking-tight leading-6'>"Upwork enables us to differentiate ourselves
+                from our competitors and produce content at a high caliber"</p>
+              <p className='mt-3 w-4/5 text-gray-300'>Josh Machiz, Chief Digital Officer</p>
+              <p className='mt-8'>Results</p>
+              <hr className='mt-1'/>
+              <p className='text-2xl mt-1'>Emmy Winning</p>
+              <p className='mt-2 text-gray-300'>Facebook Watch program</p>
+              <p className='text-2xl mt-4'>Millions</p>
+              <p className='mt-2 w-4/5 text-gray-300'>Of impressons generated per client per IPO</p>
+            </div>
+            <div className='p-4 bg-green-900 text-white rounded-xl cursor-pointer w-[90vw]'>
               <div className='flex space-x-2 justify-center'>
                 <p>Logo</p>
                 <p className='text-xl'>Nasdaq</p>
