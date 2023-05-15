@@ -9,9 +9,9 @@ import FindTalentMain from './FindTalentMain'
 import Star from './Star'
 
 export const FrontPage = () => {
-  const [ isDown, setIsDown] = useState(false);
-  const [ startX, setStartX ] = useState(0);
-  const [ scrollLeft, setScrollLeft ] = useState(0);
+  const [isDown, setIsDown] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
 
   useEffect(() => {
     console.log(`startX after change ${startX}}`)
@@ -20,7 +20,7 @@ export const FrontPage = () => {
 
   const handleMouseUp = () => {
     setIsDown(false);
-    
+
   }
 
 
@@ -36,7 +36,7 @@ export const FrontPage = () => {
     if (!isDown) return; //stop the function from running
     var slider = document.getElementById('slider');
     const x = e.pageX - slider.offsetLeft;
-    const walk  = x - startX;
+    const walk = x - startX;
     slider.scrollLeft = scrollLeft - walk;
   }
 
@@ -203,7 +203,7 @@ export const FrontPage = () => {
 
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor"
                     className="w-4 h-4 mt-1">
-                    <path stroke-linecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
                 </div>
 
@@ -477,7 +477,7 @@ export const FrontPage = () => {
                     fill="none" viewBox="0 0 24 24"
                     className='w-h h-6 mt-1'
                     strokeWidth="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
                   </svg>
                   <div className="flex flex-col space-y-1">
                     <p className='text-2xl md:text-4xl tracking-tight'>Safe and secure.</p>
@@ -545,15 +545,15 @@ export const FrontPage = () => {
         </div>
         <div className='mt-8 w-full'>
           <h1 className='text-5xl font-serif w-4/5 tracking-tight leading-10'>Trusted by leading brands and startups</h1>
-          <div 
+          <div
 
             onMouseDown={(e) => handleMouseDown(e)}
             onMouseLeave={() => handleMouseLeave()}
             onMouseUp={() => handleMouseUp()}
             onMouseMove={(e) => handleMouseMove(e)}
             id='slider'
-            className='grid gap-4 grid-flow-col auto-cols-max mt-8 overflow-hidden'>
-            <div className='p-4 bg-green-900 text-white rounded-xl cursor-pointer w-[90vw]'>
+            className='grid gap-4 md:gap-8 grid-flow-col mt-8 overflow-hidden w-full relative'>
+            <div className='p-4 bg-green-900 text-white rounded-xl cursor-pointer w-[70vw] md:w-[40vw] lg:w-[30vw]'>
               <div className='flex space-x-2 justify-center'>
                 <p>Logo</p>
                 <p className='text-xl'>Nasdaq</p>
@@ -562,42 +562,44 @@ export const FrontPage = () => {
                 from our competitors and produce content at a high caliber"</p>
               <p className='mt-3 w-4/5 text-gray-300'>Josh Machiz, Chief Digital Officer</p>
               <p className='mt-8'>Results</p>
-              <hr className='mt-1'/>
+              <hr className='mt-1' />
               <p className='text-2xl mt-1'>Emmy Winning</p>
               <p className='mt-2 text-gray-300'>Facebook Watch program</p>
               <p className='text-2xl mt-4'>Millions</p>
               <p className='mt-2 w-4/5 text-gray-300'>Of impressons generated per client per IPO</p>
             </div>
-            <div className='p-4 bg-green-900 text-white rounded-xl cursor-pointer w-[90vw]'>
+            <div className='p-4 bg-amber-600 text-white rounded-xl cursor-pointer w-[70vw] md:w-[40vw] lg:w-[30vw]'>
               <div className='flex space-x-2 justify-center'>
                 <p>Logo</p>
-                <p className='text-xl'>Nasdaq</p>
+                <p className='text-xl'>Microsoft</p>
               </div>
-              <p className='text-xl mt-4 font-serif tracking-tight leading-6'>"Upwork enables us to differentiate ourselves
-                from our competitors and produce content at a high caliber"</p>
-              <p className='mt-3 w-4/5 text-gray-300'>Josh Machiz, Chief Digital Officer</p>
+              <p className='text-xl mt-4 font-serif tracking-tight leading-6'>“One of the advantages of utilizing freelancers is finding
+                talent with different skills quickly as our needs change.”</p>
+              <p className='mt-3 w-4/5 text-gray-300'>Carol Taylor, Director of Content Experience</p>
               <p className='mt-8'>Results</p>
-              <hr className='mt-1'/>
-              <p className='text-2xl mt-1'>Emmy Winning</p>
-              <p className='mt-2 text-gray-300'>Facebook Watch program</p>
-              <p className='text-2xl mt-4'>Millions</p>
-              <p className='mt-2 w-4/5 text-gray-300'>Of impressons generated per client per IPO</p>
+              <hr className='mt-1' />
+              <p className='text-2xl mt-1'>50% faster</p>
+              <p className='mt-2 text-gray-300'>launch of projects</p>
+              <p className='text-2xl mt-4'>10,000</p>
+              <p className='mt-2 w-4/5 text-gray-300'>projects completed</p>
             </div>
-            <div className='p-4 bg-green-900 text-white rounded-xl cursor-pointer w-[90vw]'>
-              <div className='flex space-x-2 justify-center'>
-                <p>Logo</p>
-                <p className='text-xl'>Nasdaq</p>
+            <div className='p-4 bg-black text-white rounded-xl cursor-pointer w-[70vw] md:w-[40vw] lg:w-[30vw]'>
+              <div className='flex flex-col space-y-4 justify-center items-center'>
+                <p>And many more</p>
+                <img src='./bitcoin.svg' classname='w-4 h-4 text-white' />
+                <img src='./tripadvisor.svg' />
+                <img src='./rayban.svg' />
+                <img />
+
               </div>
-              <p className='text-xl mt-4 font-serif tracking-tight leading-6'>"Upwork enables us to differentiate ourselves
-                from our competitors and produce content at a high caliber"</p>
-              <p className='mt-3 w-4/5 text-gray-300'>Josh Machiz, Chief Digital Officer</p>
-              <p className='mt-8'>Results</p>
-              <hr className='mt-1'/>
-              <p className='text-2xl mt-1'>Emmy Winning</p>
-              <p className='mt-2 text-gray-300'>Facebook Watch program</p>
-              <p className='text-2xl mt-4'>Millions</p>
-              <p className='mt-2 w-4/5 text-gray-300'>Of impressons generated per client per IPO</p>
             </div>
+            <button className='hidden absolute top-44 right-0 md:flex justify-center items-center bg-orange-300 w-8 h-8 p-2 rounded-full shadow-2xl'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
+                stroke="currentColor" class="w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+
+            </button>
 
           </div>
         </div>
