@@ -23,6 +23,16 @@ export const FrontPage = () => {
 
   }
 
+  const moveSlider = (p) => {
+    var slider = document.getElementById('slider');
+    if (p === 'left') {
+      slider.scrollLeft -= 500;
+    }
+    else {
+      slider.scrollLeft += 500;
+    }
+  }
+
 
   const handleMouseDown = (e) => {
     setIsDown(true);
@@ -543,7 +553,7 @@ export const FrontPage = () => {
             <button className='bg-white rounded-full text-blue-600 w-1/2 lg:w-1/3 md:mt-8 p-2'>Find oportunities</button>
           </div>
         </div>
-        <div className='mt-8 w-full'>
+        <div className='mt-8 w-full relative'>
           <h1 className='text-5xl font-serif w-4/5 tracking-tight leading-10'>Trusted by leading brands and startups</h1>
           <div
 
@@ -552,8 +562,8 @@ export const FrontPage = () => {
             onMouseUp={() => handleMouseUp()}
             onMouseMove={(e) => handleMouseMove(e)}
             id='slider'
-            className='grid gap-4 md:gap-8 grid-flow-col mt-8 overflow-hidden w-full relative'>
-            <div className='p-4 bg-green-900 text-white rounded-xl cursor-pointer w-[70vw] md:w-[40vw] lg:w-[30vw]'>
+            className='grid gap-4 md:gap-8 grid-flow-col mt-8 overflow-hidden w-full md:scroll-smooth'>
+            <div className='p-4 bg-green-900 text-white rounded-xl cursor-pointer md:cursor-default w-[70vw] md:w-[40vw] lg:w-[30vw]'>
               <div className='flex space-x-2 justify-center'>
                 <p>Logo</p>
                 <p className='text-xl'>Nasdaq</p>
@@ -568,7 +578,7 @@ export const FrontPage = () => {
               <p className='text-2xl mt-4'>Millions</p>
               <p className='mt-2 w-4/5 text-gray-300'>Of impressons generated per client per IPO</p>
             </div>
-            <div className='p-4 bg-amber-600 text-white rounded-xl cursor-pointer w-[70vw] md:w-[40vw] lg:w-[30vw]'>
+            <div className='p-4 bg-amber-600 text-white rounded-xl cursor-pointer md:cursor-default w-[70vw] md:w-[40vw] lg:w-[30vw]'>
               <div className='flex space-x-2 justify-center'>
                 <p>Logo</p>
                 <p className='text-xl'>Microsoft</p>
@@ -583,7 +593,7 @@ export const FrontPage = () => {
               <p className='text-2xl mt-4'>10,000</p>
               <p className='mt-2 w-4/5 text-gray-300'>projects completed</p>
             </div>
-            <div className='p-4 bg-black text-white rounded-xl cursor-pointer w-[70vw] md:w-[40vw] lg:w-[30vw]'>
+            <div className='p-4 bg-black text-white rounded-xl cursor-pointer md:cursor-default w-[70vw] md:w-[40vw] lg:w-[30vw]'>
               <div className='flex flex-col space-y-4 justify-center items-center'>
                 <p>And many more</p>
                 <img src='./bitcoin.svg' classname='w-4 h-4 text-white' />
@@ -593,14 +603,27 @@ export const FrontPage = () => {
 
               </div>
             </div>
-            <button className='hidden absolute top-44 right-0 md:flex justify-center items-center bg-orange-300 w-8 h-8 p-2 rounded-full shadow-2xl'>
+            <button
+              onClick={() => moveSlider('right')}
+              className='hidden md:top-80 lg:top-60 right-0 absolute md:flex justify-center items-center bg-orange-300 w-8 h-8 p-2 rounded-full shadow-2xl'>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
                 stroke="currentColor" class="w-6 h-6">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
 
             </button>
+            <button
+              onClick={() => moveSlider('left')}
+              className='hidden md:top-80 lg:top-60 left-0 absolute md:flex justify-center items-center bg-orange-300 w-8 h-8 p-2 rounded-full shadow-2xl'>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+              </svg>
+            </button>
 
+
+          </div>
+          <div className='w-full text-white bg-black rounded-md mt-8 h-[70vh]'>
+            <p>You are here</p>
           </div>
         </div>
       </div>
