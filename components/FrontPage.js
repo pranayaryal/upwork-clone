@@ -7,6 +7,7 @@ import ProjectCatalog from './ProjectCatalog'
 import { useEffect, useState } from 'react'
 import FindTalentMain from './FindTalentMain'
 import Star from './Star'
+import FooterMenu from './FooterMenu'
 
 export const FrontPage = () => {
   const [isDown, setIsDown] = useState(false);
@@ -622,8 +623,8 @@ export const FrontPage = () => {
 
 
           </div>
-          <div className='w-full text-white bg-black rounded-md mt-8 h-[70vh]'>
-            <p>You are here</p>
+          <div className='w-full text-white bg-black rounded-md mt-8 md:h-[70vh]'>
+            <FooterMenu />
           </div>
         </div>
       </div>
